@@ -1,0 +1,12 @@
+// Hitex/Lue/11.02.2008 
+// Executable Script file for HiTOP Debugger
+// Reset application & Go main 
+
+// Reset    
+RESET TARGET
+
+
+// execute program till main
+Go UNTIL main
+wait
+
