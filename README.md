@@ -33,11 +33,12 @@ Full details of the examples can be found in README.md file of the corresponding
 
 If you discover a problem with any of the samples published here that isn't already reported in Issues, open a New issue.
 
-If you have feature idea - please open a feature request.
-If you have new sample development on the REMCU Lib  - please opening a pull request.
-We will be pleased to answer all your questions about the REMCU Lib project through the options/channels below:
-StackOverflow. Tag your question with #remculib tag. We watch full list of questions and will answer ASAP. Make experience that you've got available for other users!
-Q&A Github repository. You can raise an issue in the Q&A repository.
-Email.
+If you have a feature idea - please open a [feature request](https://github.com/remotemcu/remcu_examples/issues).  
+If you have new sample development on the REMCU Lib  - please opening a [pull request](https://github.com/remotemcu/remcu_examples/issues) with *"New Sample!"* tag.  
+We will be pleased to answer all your questions about the REMCU Lib project through the options/channels below:  
+*StackOverflow*. Tag your question with **#remculib** tag. We watch full list of questions and will answer ASAP. Make experience that you've got available for other users!  
+[Contact us form](https://remotemcu.com/contact-us)  
+[@Email](support@remotemcu.com)  
+[Twitter](https://twitter.com/RemoteMcu)  
 
 Thanks in advance!
