@@ -31,10 +31,10 @@ Full details of the examples can be found in README.md file of the corresponding
 
 ## Support policy
 
-If you discover a problem with any of the samples published here that isn't already reported in Issues, open a New issue.
+If you discover a problem with any of the samples published here that isn't already reported in Issues, open a [New issue](https://github.com/remotemcu/remcu_examples/issues/new?assignees=&labels=bug&template=bug_report.md&title=).
 
-If you have a feature idea - please open a [feature request](https://github.com/remotemcu/remcu_examples/issues).  
-If you have new sample development on the REMCU Lib  - please opening a [pull request](https://github.com/remotemcu/remcu_examples/issues) with *"New Sample!"* tag.  
+If you have a feature idea - please open a [feature request](https://github.com/remotemcu/remcu_examples/issues/new?assignees=&labels=Feature+request&template=feature_request.md&title=).  
+If you have new sample development on the REMCU Lib  - please opening a [pull request](https://github.com/remotemcu/remcu_examples/pulls) or [*"Suggestion of examples"*](https://github.com/remotemcu/remcu_examples/issues/new?assignees=&labels=Suggestion+of+examples&template=suggestion-of-examples.md&title=) request.  
 We will be pleased to answer all your questions about the REMCU Lib project through the options/channels below:  
 *StackOverflow*. Tag your question with **#remculib** tag. We watch full list of questions and will answer ASAP. Make experience that you've got available for other users!  
 [Contact us form](https://remotemcu.com/contact-us)  
