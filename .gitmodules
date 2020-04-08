@@ -1,0 +1,3 @@
+[submodule "stm8l_discovery/contrib"]
+	path = stm8l_discovery/contrib
+	url = https://github.com/tanbras/MCU_Experiments.git
