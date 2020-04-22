@@ -1,0 +1,10 @@
+remcu_include/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.so
+*.lib
+*.dll
+build-*/
+REMCU_LICENSE.txt
+temp/
