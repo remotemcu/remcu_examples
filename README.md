@@ -1,6 +1,8 @@
 # REMCU examples
 
-Samples illustrating application development on the [**REMCU Lib**](https://remotemcu.com/).
+Examples illustrating application development on the [**REMCU Lib**](https://remotemcu.com/). These examples are designed to get you up and running with REMCU Lib in no time.
+
+
 <details>
 	<summary> Short demo
 		<b>(click here to view) </b></summary>
