@@ -81,7 +81,7 @@ Try to change the period. The signal frequency also has changed!
 </details>
 
 
-The seconda app is ***DAC_DMA_Escalator*** that generates an escalator signal. The DAC module of STM32 MCU doesn’t have this signal generator. But the wave can be created by using both DAC and DMA.  
+The second app is ***DAC_DMA_Escalator*** that generates an escalator signal. The DAC module of STM32 MCU doesn’t have this signal generator. But the wave can be created by using both DAC and DMA.  
 A DMA enables buffering received and transmitted data from peripherals to the MCU's memory. And the REMCU library can load and store to the microcontroller memory.  
 ![dma](img/dma_show.gif)  
 In this way, you can upload signal data to the MCU chip memory and control DAC using DMA.  
@@ -118,11 +118,41 @@ Rotate the shaft and you will get the voltage versus time chart.
 ![adc_line](img/rasp_adc.gif)  
 </details>
 
+There are two examples to work with CAN bus, *CAN_send* and *CAN_receiver*. These examples work on 125 kBps. For other baud rates and this clock configuration(see system_stm32f10x.c), the CAN Initialization code (Prescaler value) should be amended accordingly:  
+```cpp
+  //CAN_InitStructure.CAN_Prescaler = 4*16; //Prescaler for 62.5 kBps
+  CAN_InitStructure.CAN_Prescaler = 4*8; //Prescaler for 125 kBps
+  //CAN_InitStructure.CAN_Prescaler = 4*4; //Prescaler for 250 kBps
+  //CAN_InitStructure.CAN_Prescaler = 4*2; //Prescaler for 500 kBps
+  //CAN_InitStructure.CAN_Prescaler = 4*1; //Prescaler for 1 MBps
+```
+Build CAN network like this:  
+<details><summary>
+show(<b>click here</b>) </summary>
+
+![](img/CAN_pic.jpg)
+
+![](img/can_scheme.png)
+
+</details>
+
+The *CAN_receiver* is a simple app that captures all CAN bus messages on the bus. Just run *CAN_receiver* app and look at the results:  
+<details><summary>
+show(<b>click here</b>) </summary>
+
+![](img/can_demo_receiver.gif)
+</details>
+
+The *CAN_send* is a simple app that send one message obtained through the program arguments. Example of using:  
+<details><summary>
+show(<b>click here</b>) </summary>
+
+![](img/can_demo_send.gif)
+</details>
 
 > Note that we didn’t develop the MCU firmware. Our Linux program directly works with ADC, DAC, DMA and RAM modules using a remote procedure execution of the Standard Peripheral Library.  
-<details>
-<summary>
-<b>note(click here) </b></summary>
+<details><summary>
+show(<b>click here</b>) </summary>
 
 ![spl](img/spl.png)
 </details>
