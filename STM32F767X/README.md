@@ -23,20 +23,20 @@ There is also possible to use the REMCU with high level languages like Python, J
 Install the [Anaconda Distribution](https://www.anaconda.com/distribution/) 
 
 Download the example. Download the necessary version of REMCU Lib from [**download page**](https://remotemcu.com/download):  
-Target - **STM32F767X**  
+Target - **STM32F767xx**  
 Library - **LowLayer_HAL_drivers**  
 Version - **1.16.0**  
 Operation system - **your OS**
 <details>
   <summary>download show<b>(click here) </b></summary>
   
-![download show](../img/downloadF7.gif)
+![](img/downloadF7.PNG)
 </details>
 Extract the library to this folder. 
 <details>
   <summary>show <b>(click here)</b></summary>
   
-![extract.png](img/extract.png)
+![](img/extract.PNG)
 </details>
 
 Connect the Discovery board to your PC, then
@@ -54,7 +54,11 @@ C++ [Cling](https://github.com/root-project/cling) interpreter is only available
 
 Run Jupyter Notebook and open the **stm32f767_GPIO_example.ipynb** or **stm32f767_PWM_example.ipynb** or **stm32f767_ADC-DAC-DMA_example.ipynb** file in it. The script contains detailed comments for work. You just do step by step code of the script and observe the results.  
 
-
 Description of REMCU functions can be found can be found in [API reference](https://remotemcu.com/api-v1-0)  
-Code controlling MCU peripherals have been taken from Examples_LL of [HAL for STM32F4DISCOVERY](https://github.com/STMicroelectronics/STM32CubeF7/tree/master/Projects/STM32F767ZI-Nucleo/Examples_LL/).
+Code controlling MCU peripherals have been taken from Examples_LL of [HAL for STM32F7](https://github.com/STMicroelectronics/STM32CubeF7/tree/master/Projects/STM32F767ZI-Nucleo/Examples_LL/).
 
+<details>
+  <summary>Result <b>(click here)</b></summary>
+  
+[video](img/demo_examples.mp4)
+</details>
