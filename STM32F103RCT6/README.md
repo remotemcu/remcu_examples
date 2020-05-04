@@ -244,6 +244,8 @@ If you ever wish to conduct a quick experiment with any chip peripheral module o
 It saves a lot of time that is usually spent on the development of experimental MCU firmware. An interact work with MCU/SoC peripherals helps us to explore new peripheral blocks of MCU/SoC quicker.  
 And furthermore, the application code written in the C programming language using REMCU is backwards-portable, meaning it can be transferred from a desktop program to the MCU program and vice-versa. The code will work just as fine on MCU as it works on PC. That's why code written on desktop with ReMCU can be used to develop stand-alone firmware for MCU.  
 
+[**REMCU tutorial**](https://youtu.be/iuofdoWWkC4) can help you run these notebooks.
+
  * **Cpp_Examples.ipynb** is a C++ script for Jupyter Notebook.  
 
 Install [**Anaconda Distribution**](https://www.anaconda.com/distribution/). Run Anaconda Navigator and install [**xeus-cling**](https://github.com/jupyter-xeus/xeus-cling) and [**xplot**](https://github.com/QuantStack/xplot) packages.  
@@ -269,6 +271,7 @@ But there is possible to use the REMCU with high level languages like Python, Ja
 
 ***Python_Examples.ipynb*** sample demonstrates work with REMCU lib in Windows using Python interpreter.
 
+[**REMCU tutorial**](https://youtu.be/iuPJtNPQ9iA) can help you run these notebooks.
 
 ### Prerequirements
  * A board with the STM32F103 high-density device. There are demonstration on [Port103R](https://www.google.com/search?q=port103r) board.
