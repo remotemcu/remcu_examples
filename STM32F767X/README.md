@@ -10,6 +10,8 @@ There is also possible to use the REMCU with high level languages like Python, J
 
 *These examples demonstrates how to easily use REMCU Lib with C++ ([Cling](https://github.com/root-project/cling)) interpreter.*
 
+[**REMCU tutorial**](https://remotemcu.com/tutorials) can help you run these notebooks.
+
 
 ## Prerequirements
   * An [STM32F767 board](img/f7board.jpg)
