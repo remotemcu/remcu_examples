@@ -1,7 +1,7 @@
 import ctypes
 import sys
 
-from remcu_include.STM32F051_StdPeriph_Lib import *
+from remcu_include.STM32F030_StdPeriph_Lib import *
 
 if sys.platform.startswith('win32'): #Windows
     remcu = ctypes.WinDLL("remcu.dll")
@@ -13,11 +13,11 @@ elif sys.platform.startswith('darwin'): #MacOS
     remcu = ctypes.CDLL("./libremcu.dylib")
     
     
-debug_server_ip = "127.0.0.1"
-default_openocd_port = 6666
+debug_server_ip = "localhost"
+default_GDB_port = 3333
 timeout_sec = 3 # It can not be negative
 
-success = remcu.remcu_connect2OpenOCD(debug_server_ip, default_openocd_port, timeout_sec)
+success = remcu.remcu_connect2GDB(debug_server_ip, default_GDB_port, timeout_sec)
 if success == 0:
     print("Server error. Possible solutions: ")
     print("1. Check connection to debug server")
@@ -46,4 +46,5 @@ while True:
     sleep(0.1)
     remcu.GPIO_ResetBits(GPIOA, GPIO_Pin_4)
     sleep(0.1)
+    print("PA4 pin is toogling...")
 
