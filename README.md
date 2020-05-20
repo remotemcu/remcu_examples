@@ -2,6 +2,14 @@
 
 Examples illustrating application development on the [**REMCU Lib**](https://remotemcu.com/). These examples are designed to get you up and running with REMCU Lib in no time.
 
+| Target 	| Jupyter notebook ex. 	| Python scripts ex. 	| Qt app ex. 	| C/C++ app ex. 	| Raspberry Pi board examples 	|
+|:-----------------:	|:--------------------------------------------------:	|:------------------:	|:-------------------------------:	|:--------------------:	|:------------------------------------------------------------------------------------------------:	|
+| stm32f4_discovery 	| C++(cling) & Python:<br>*ADC, DAC, DMA, GPIO, PWM* 	|  	| Accelerometer & CAN bus sniffer 	|  	|  	|
+| STM32F767X 	| C++(cling): *ADC, DAC, DMA, GPIO, PWM* 	|  	|  	|  	|  	|
+| STM32F103 	| C++(cling) & Python: *ADC, GPIO, PWM* 	| *ADC, GPIO* 	|  	| *ADC, GPIO, CAN bus* 	| C/C++ apps & Python scripts: *ADC, GPIO, CAN bus*<br> - the prepared Raspbian image is available 	|
+| stm8l_discovery 	| C++(cling): *ADC, DAC, DMA, GPIO, LCD screen* 	|  	|  	|  	|  	|
+| STM32F030-51 	| soon 	|  	|  	|  	| soon 	|
+| stm32f3_discovery 	| soon 	|  	| soon : Compas & Accelerometer 	|  	|  	|
 
 <details>
 	<summary> Short demo
