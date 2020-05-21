@@ -231,11 +231,6 @@ Run OpenOCD with arguments above:
 ![stlink_linux](img/openocd_unix.png)
 </details>
 
-  + Jlink debugger
-```bash 
-./openocd -f interface/jlink.cfg -f target/stm32f1x.cfg
-```
-
 #### Running...
 There are the same programs and python scripts as above in the Raspberry part. You can see their description there.
 
@@ -304,10 +299,6 @@ openocd.exe -f interface/stlink-v2.cfg -f target/stm32f1x.cfg
 ```
 ![stlink_windows](img/openocd.png)
 
-  + Jlink debugger
-```bash
-./openocd.exe -f interface/jlink.cfg -f target/stm32f1x.cfg
-```
 Install the [Anaconda Distribution](https://www.anaconda.com/distribution/) and [ipywidgets](https://ipywidgets.readthedocs.io/en/stable/user_install.html) package. ***We encourage you use Python 2 version***. We can not guarantee the work of the script with Python 3.  
 Run Jupyter Notebook and open the Python_Examples.ipynb file in it.  
 The script contains detailed comments for work. You just do step by step code of the script and observe the results.  
