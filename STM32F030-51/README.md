@@ -4,7 +4,7 @@
 These simple examples demonstrate how to easily expand hardware of a Raspberry Pi board using 50 cent STM32F0 microcontroller and some wires.  
 The Python scripts ran Raspberry will gain access to internal STM32F0 peripheral modules like DAC, ADC, DMA, GPIO and others as if these peripherals were a part of Raspberry chip. Without a microcontroller firmware development and a kernel driver just with help [**REMCU Library**](https://remotemcu.com/).
 
-There are also [Jupyter Notebook](https://jupyter.org/) scripts for running on PC(MacOS or Linux)
+There are also [Jupyter Notebook](https://jupyter.org/) scripts for running on PC(MacOS, Linux, Windows)
 
 To interact with a microcontroller hardware from our PC we use the driver functions of [Standard Peripheral Library for STM32F0 line](https://www.st.com/en/embedded-software/stsw-stm32048.html) of STMicroelectronics company. It is a vendor software development kit provided by STMicroelectronics company for a firmware development of STM32 MCU.
 Our application calls these driver functions, just like calls them for hardware operations from firmware code.
