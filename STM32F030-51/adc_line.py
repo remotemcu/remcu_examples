@@ -14,10 +14,10 @@ elif sys.platform.startswith('darwin'): #MacOS
     
     
 debug_server_ip = "127.0.0.1"
-default_openocd_port = 6666
+default_GDB_port = 3333
 timeout_sec = 3 # It can not be negative
 
-success = remcu.remcu_connect2OpenOCD(debug_server_ip, default_openocd_port, timeout_sec)
+success = remcu.remcu_connect2GDB(debug_server_ip, default_GDB_port, timeout_sec)
 if success == 0:
     print("Server error. Possible solutions: ")
     print("1. Check connection to debug server")

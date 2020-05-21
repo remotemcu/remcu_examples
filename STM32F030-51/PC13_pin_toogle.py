@@ -13,7 +13,7 @@ elif sys.platform.startswith('darwin'): #MacOS
     remcu = ctypes.CDLL("./libremcu.dylib")
     
     
-debug_server_ip = "localhost"
+debug_server_ip = "127.0.0.1"
 default_GDB_port = 3333
 timeout_sec = 3 # It can not be negative
 
