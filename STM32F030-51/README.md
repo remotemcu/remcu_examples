@@ -1,7 +1,10 @@
 # REMCU examples for STM32F030 and STM32F051 board
+
+![raspberry remcu stm32f030](img/rasp_f030.png)
+
 ## Overview
 
-These simple examples demonstrate how to easily expand hardware of a Raspberry Pi board using 50 cent STM32F0 microcontroller and some wires.  
+These simple examples demonstrate how to easily expand hardware of a Raspberry Pi board using 50 cent STM32F030 microcontroller(and other low-cost STM32F0 MCU) and some wires.  
 The Python scripts ran Raspberry will gain access to internal STM32F0 peripheral modules like DAC, ADC, DMA, GPIO and others as if these peripherals were a part of Raspberry chip. Without a microcontroller firmware development and a kernel driver just with help [**REMCU Library**](https://remotemcu.com/).
 
 There are also [Jupyter Notebook](https://jupyter.org/) scripts for running on PC(MacOS, Linux, Windows)
