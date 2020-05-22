@@ -4,13 +4,13 @@
 
 ## Overview
 
-These simple examples demonstrate how to easily expand hardware of a Raspberry Pi board using 50 cent STM32F030 microcontroller(and other low-cost STM32F0 MCU) and some wires.  
+These simple examples demonstrate how to easily expand hardware of a Raspberry Pi board using 50 cent STM32F030 microcontroller(and other low-cost STM32F0 MCUs) and some wires.  
 The Python scripts ran Raspberry will gain access to internal STM32F0 peripheral modules like DAC, ADC, DMA, GPIO and others as if these peripherals were a part of Raspberry chip. Without a microcontroller firmware development and a kernel driver just with help [**REMCU Library**](https://remotemcu.com/).
 
 There are also [Jupyter Notebook](https://jupyter.org/) scripts for running on PC(MacOS, Linux, Windows)
 
-To interact with a microcontroller hardware from our PC we use the driver functions of [Standard Peripheral Library for STM32F0 line](https://www.st.com/en/embedded-software/stsw-stm32048.html) of STMicroelectronics company. It is a vendor software development kit provided by STMicroelectronics company for a firmware development of STM32 MCU.
-Our application calls these driver functions, just like calls them for hardware operations from firmware code.
+To interact with a microcontroller hardware from our PC and Raspberry Pi we use the driver functions of [Standard Peripheral Library for STM32F0 line](https://www.st.com/en/embedded-software/stsw-stm32048.html) of STMicroelectronics company. It is a vendor software development kit provided by STMicroelectronics company for a firmware development of STM32 MCU.
+Our application calls these driver functions, just like calls them for hardware operations from firmware code. The REMCU Library translates a local driver function call on the PC or embedded computer to a remote call of the same​ driver function on the STM32F0 chip using debug interface.
 
 The code controlling MCU peripheral module have been taken from  [example](STM32F0_StdPeriph_Lib_V3.5.0/Project/STM32F0_StdPeriph_Examples) of [Standard Peripheral Library for STM32F0](https://www.st.com/en/embedded-software/stsw-stm32048.html)
 
@@ -57,7 +57,7 @@ Navigate to ‘examples_stm32f030’ or ‘examples_stm32f051’ directory depen
 
 ### Python scripts
 
-You can use the ReMCU library not only in the C/C++ program on the Raspberry Pi board. Alternatively, you can call ReMCU library functions using other programming languages. As Python is an official recommended programming language of Raspberry, let’s see some Python examples. To make working with them less troublesome, we provide language wrappers(**STM32F030_StdPeriph_Lib.py** and **STM32F051_StdPeriph_Lib.py**).
+You can use the ReMCU library not only in the C/C++ program on the Raspberry Pi board. Alternatively, you can call ReMCU library functions using other programming languages. As Python is an official recommended programming language of Raspberry, let’s see some Python examples. To make working with them less troublesome, we provide language wrappers(**STM32F030_StdPeriph_Lib.py** and **STM32F051_StdPeriph_Lib.py** in the REMCU archive).
  With these wrappers it becomes easy to work with hardware as it is using C or C++.  
  <details>
   <summary>
@@ -66,7 +66,7 @@ Examples: <b>Python and C/C++(click here) </b></summary>
 ![diff lang](../img/diff.png)
 </details>
   
-  * **PA4_pin_toogle.py** and **PC13_pin_toogle.py** script toggles the PA4 and PC13 MCU pin accordingly. Just execute it:  
+  * [**PA4_pin_toogle.py**](PA4_pin_toogle.py) and [**PC13_pin_toogle.py**](PC13_pin_toogle.py) script toggles the PA4 and PC13 MCU pin accordingly. The code of the sample have been taken from **GPIO_IOToggle** ([main.c](STM32F0xx_StdPeriph_Examples/GPIO/GPIO_IOToggle/main.c)) example of [Standard Peripheral Library(SPL) for STM32F0x line](https://www.st.com/en/embedded-software/stsw-stm32048.html) Just execute it:  
   
 ```bash
 python PA4_pin_toogle.py
@@ -78,18 +78,14 @@ python PC13_pin_toogle.py
 
 ![led](img/led-crop.gif)  
 
-A small script **adc_line** receives the ADC data and builds a horizontal bar chart  based on this value. Plug a variable resistor into the PA5 pin and run the application.  
+A small script [**adc_line.py**](adc_line.py) receives the ADC data and builds a horizontal bar chart  based on this value. Plug a variable resistor into the PA5 pin and run the application. The code of the sample is based on **ADC_BasicExample** ([main.c](STM32F0xx_StdPeriph_Examples/ADC/ADC_BasicExample/main.c)) example of [Standard Peripheral Library(SPL) for STM32F0x line](https://www.st.com/en/embedded-software/stsw-stm32048.html)  
 Rotate the shaft and you will get the voltage versus time chart.  
 ![adc_line](img/adc_console.gif)  
 
-> Note that we didn’t develop the MCU firmware. Our Linux program directly works with ADC, DAC, DMA and RAM modules using a remote procedure execution of the Standard Peripheral Library.  
-<details><summary>
-show(<b>click here</b>) </summary>
+> Note that we didn’t develop the MCU firmware. Our Linux program directly works with ADC, DAC, DMA and RAM modules using a remote procedure execution of the Standard Peripheral Library. In more detail in [video](https://youtu.be/JdBabbC5Prk)   
 
-![spl](img/spl.png)
-</details>
 
-The ReMCU library can be ported to any version of the Raspberry Pi board and also on far less powerful and much more powerful embedded platforms  
+The REMCU library can be ported to any version of the Raspberry Pi board and also on far less powerful and much more powerful embedded platforms  
 ![other_plats](img/other_plats.png)
 
 ## 2. MacOS/Linux
