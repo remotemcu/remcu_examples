@@ -1,0 +1,75 @@
+/**
+  @page note Note for TrueSTUDIO
+  
+  @verbatim
+  ******************** (C) COPYRIGHT 2011 STMicroelectronics ********************
+  * @file    note.txt
+  * @author  MCD Application Team
+  * @version V3.5.0
+  * @date    08-April-2011
+  * @brief   This file contains the needed step to use "printf" with TrueSTUDIO 
+  *          toolchain.
+  ******************************************************************************
+  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE TIME.
+  * AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY DIRECT,
+  * INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING FROM THE
+  * CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE CODING
+  * INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+  ******************************************************************************
+  @endverbatim
+
+The C runtime library include many functions, including some that typically 
+handle I/O. The I/O related runtime functions include printf(), fopen(), fclose(),
+and many others.
+
+It is common to redirect the I/O from these functions to the actual embedded 
+platform, such as redirecting printf() output to an LCD display or a serial cable,
+or to redirect file operations like fopen() and fclose() to some Flash file 
+system middleware.
+
+The free Lite version of TrueSTUDIO do not support I/O redirection, and instead 
+have do-nothing stubs compiled into the C runtime library.
+
+To support printf() redirection in the professional version, you should do the following:
+ - Open TrueSTUDIO professional and load your project. 
+ - In the Project explorer, Right click on the project and select New->Other...
+ - Expand System calls
+ - Select Minimal System Calls Implementation and click next.
+ - Click on Finish and verify that "syscalls.c" is added to your project.
+ - Add the following code in the _write() function in "syscalls.c". 
+
+  @code
+   /*****************************************/
+   int Index;
+  
+   for (Index = 0; Index < len; Index++)
+   {
+      __io_putchar( *ptr++ );
+   }
+
+   return len;
+   /*****************************************/
+   @endcode
+   
+ - Finally, Rebuild your project.
+
+@note
+ - Low-density Value line devices are STM32F100xx microcontrollers where the 
+   Flash memory density ranges between 16 and 32 Kbytes.
+ - Low-density devices are STM32F101xx, STM32F102xx and STM32F103xx 
+   microcontrollers where the Flash memory density ranges between 16 and 32 Kbytes.
+ - Medium-density Value line devices are STM32F100xx microcontrollers where
+   the Flash memory density ranges between 32 and 128 Kbytes.  
+ - Medium-density devices are STM32F101xx, STM32F102xx and STM32F103xx 
+   microcontrollers where the Flash memory density ranges between 32 and 128 Kbytes.
+ - High-density Value line devices are STM32F100xx microcontrollers where the 
+   Flash memory density ranges between 256 and 512 Kbytes.
+ - High-density devices are STM32F101xx and STM32F103xx microcontrollers where
+   the Flash memory density ranges between 256 and 512 Kbytes.
+ - XL-density devices are STM32F101xx and STM32F103xx microcontrollers where
+   the Flash memory density ranges between 512 and 1024 Kbytes.
+ - Connectivity line devices are STM32F105xx and STM32F107xx microcontrollers. 
+  
+ * <h3><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h3>
+ */
