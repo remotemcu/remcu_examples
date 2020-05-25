@@ -29,12 +29,12 @@ A video tutorial on how to build and run these examples on Raspberry Pi computer
  * A board with the STM32F103 high-density device. There are demonstration on [Port103R](https://www.google.com/search?q=port103r) board.
  * 4 wires to connect Pi with MCU
  * An oscilloscope to display analog signals. It is optional.
- * An specify [***image***](https://drive.google.com/file/d/1tcWPh0wf8M2cwCmVetzn6QVRU6tq7cFk/view?usp=sharing) of Raspberry containing these examples,  prebuild OpenOCD utility and REMCU library.
+ * A specify [***image***](https://drive.google.com/file/d/1tcWPh0wf8M2cwCmVetzn6QVRU6tq7cFk/view?usp=sharing) of Raspberry containing these examples,  prebuild OpenOCD utility and REMCU library.
 
 ### Prepare
 Download the [***image***](https://drive.google.com/file/d/1tcWPh0wf8M2cwCmVetzn6QVRU6tq7cFk/view?usp=sharing) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
 [![flash image](https://img.youtube.com/vi/CCRVo5sI1E0/0.jpg)](https://www.youtube.com/watch?v=CCRVo5sI1E0)  
-Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a static IP address 192.168.0.10. The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
+Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a ***static IP address 192.168.0.10***. The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
 This image has a community version of the REMCU lib which works through debug interface and requires an OpenOCD utility. Connect this Raspberry GPIO pins to debug port of the MCU using scheme below.  
 <details>
   <summary>scheme
@@ -60,6 +60,66 @@ Navigate to ‘examples’ directory and run ‘make’ command. Several applica
 
 ![make](img/make.png)
 </details>
+
+#### If you want to use the REMCU Lib without flashing the image
+That requires next:  
+Downlaod prebuild OpenOCD from [here](https://github.com/remotemcu/Raspbian_packages) to your Raspbian RootFS. The build have been tested on Raspberry Pi and we recommend it.
+
+```bash
+git clone https://github.com/remotemcu/Raspbian_packages.git
+```
+
+Connect this Raspberry GPIO pins to debug port of the MCU using [scheme above](img/scheme.png) and run OpenOCD utility
+
+```bash
+cd Raspbian_packages/
+./openocd.sh
+```
+
+Also you can install OpenOCD(version 0.10 or higher) from Raspbian's repo :
+
+```bash
+sudo apt-get install openocd
+```
+
+Connect this Raspberry GPIO pins to debug port of the MCU using [scheme above](img/scheme.png) and run OpenOCD utility
+
+```bash
+sudo openocd -f interface/raspberrypi-native.cfg -c "transport select swd" -f target/stm32f1x.cfg
+```
+
+>More information about Rpi connection with MCU using OpenOCD can be found here:
+https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspberry-pi
+or
+https://iosoft.blog/2019/01/28/raspberry-pi-openocd/
+
+Download these examples to Raspberry RootFS and go to STM32F103RCT6 directory
+
+```bash
+ git clone https://github.com/remotemcu/remcu_examples/
+ cd STM32F103RCT6/
+```
+
+Download REMCU Lib archive from [**download page**](https://remotemcu.com/download):  
+Target - **STM32F10X_HD**  
+Library - **StdPeriph_Lib**  
+Version - **V3.5.0**  
+Operation system - **Raspbian**
+
+<details>
+  <summary>download page
+  <b>(click here) </b></summary>
+  
+![download lib](img/download103_mac.gif) 
+</details>
+
+Extract it to the example folder
+
+```bash
+$pwd 
+..../STM32F103RCT6/
+$tar -xf remcu-*.tar
+```
 
 
 ### C++ programs
