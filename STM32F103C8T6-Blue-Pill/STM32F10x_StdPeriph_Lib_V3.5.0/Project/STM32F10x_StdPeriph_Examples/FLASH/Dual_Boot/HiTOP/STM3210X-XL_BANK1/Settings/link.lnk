@@ -1,0 +1,4 @@
+-d"./settings/STM32F10x_XL_Bank1.lsl"
+--optimize=0
+--map-file-format=2
+$(LinkObjects)

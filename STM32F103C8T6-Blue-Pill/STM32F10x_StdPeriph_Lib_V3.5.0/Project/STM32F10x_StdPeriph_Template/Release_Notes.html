@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="File-List" href="Library_files/filelist.xml">
+<link rel="Edit-Time-Data" href="Library_files/editdata.mso"><!--[if !mso]> <style> v\:* {behavior:url(#default#VML);} o\:* {behavior:url(#default#VML);} w\:* {behavior:url(#default#VML);} .shape {behavior:url(#default#VML);} </style> <![endif]--><title>Release Notes for STM32F10x Standard Peripherals Library Template</title><!--[if gte mso 9]><xml> <o:DocumentProperties> <o:Author>STMicroelectronics</o:Author> <o:LastAuthor>STMicroelectronics</o:LastAuthor> <o:Revision>37</o:Revision> <o:TotalTime>136</o:TotalTime> <o:Created>2009-02-27T19:26:00Z</o:Created> <o:LastSaved>2009-03-01T17:56:00Z</o:LastSaved> <o:Pages>1</o:Pages> <o:Words>522</o:Words> <o:Characters>2977</o:Characters> <o:Company>STMicroelectronics</o:Company> <o:Lines>24</o:Lines> <o:Paragraphs>6</o:Paragraphs> <o:CharactersWithSpaces>3493</o:CharactersWithSpaces> <o:Version>11.6568</o:Version> </o:DocumentProperties> </xml><![endif]--><!--[if gte mso 9]><xml> <w:WordDocument> <w:Zoom>110</w:Zoom> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" LatentStyleCount="156"> </w:LatentStyles> </xml><![endif]-->
+
+
+
+<style>
+<!--
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{mso-style-parent:"";
+margin:0in;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+h2
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:2;
+font-size:14.0pt;
+font-family:Arial;
+font-weight:bold;
+font-style:italic;}
+a:link, span.MsoHyperlink
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+p
+{mso-margin-top-alt:auto;
+margin-right:0in;
+mso-margin-bottom-alt:auto;
+margin-left:0in;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+@page Section1
+{size:8.5in 11.0in;
+margin:1.0in 1.25in 1.0in 1.25in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+mso-paper-source:0;}
+div.Section1
+{page:Section1;}
+-->
+</style><!--[if gte mso 10]> <style> /* Style Definitions */ table.MsoNormalTable {mso-style-name:"Table Normal"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; mso-style-noshow:yes; mso-style-parent:""; mso-padding-alt:0in 5.4pt 0in 5.4pt; mso-para-margin:0in; mso-para-margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:"Times New Roman"; mso-ansi-language:#0400; mso-fareast-language:#0400; mso-bidi-language:#0400;} </style> <![endif]--><!--[if gte mso 9]><xml> <o:shapedefaults v:ext="edit" spidmax="5122"/> </xml><![endif]--><!--[if gte mso 9]><xml> <o:shapelayout v:ext="edit"> <o:idmap v:ext="edit" data="1"/> </o:shapelayout></xml><![endif]--></head><body lang="EN-US" link="blue" vlink="blue">
+<div class="Section1">
+<p class="MsoNormal"><span style="font-family: Arial;"><o:p><br>
+</o:p></span></p>
+<div align="center">
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+<tbody>
+<tr>
+<td style="padding: 0cm;" valign="top">
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+<tbody>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-size: 8pt; font-family: Arial; color: blue;"><a href="../../Release_Notes.html">Back to Release page</a></span></td>
+          </tr>
+<tr style="">
+<td style="padding: 1.5pt;">
+<h1 style="margin-bottom: 18pt; text-align: center;" align="center"><span style="font-size: 20pt; font-family: Verdana; color: rgb(51, 102, 255);">Release
+Notes for STM32F10x Standard Peripherals Library Template
+(StdPeriph_Template)</span><span style="font-size: 20pt; font-family: Verdana;"><o:p></o:p></span></h1>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;">Copyright 2011 STMicroelectronics</span><span style="color: black;"><u1:p></u1:p><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;"><img alt="" id="_x0000_i1025" src="../../_htmresc/logo.bmp" style="border: 0px solid ; width: 86px; height: 65px;"></span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span style="font-family: Arial; display: none;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" width="900">
+<tbody>
+<tr style="">
+<td style="padding: 0cm;" valign="top">
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><span style="font-size: 12pt; color: white;">Contents<o:p></o:p></span></h2>
+<ol style="margin-top: 0cm;" start="1" type="1">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><a href="#History">STM32F10x Standard Peripherals Library
+Template
+update History</a><o:p></o:p></span></li>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><a href="#License">License</a><o:p></o:p></span></li>
+</ol>
+<span style="font-family: &quot;Times New Roman&quot;;">
+</span>
+            
+            <h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><a name="History"></a><span style="font-size: 12pt; color: white;">STM32F10x Standard
+Peripherals Library Template update History</span></h2>
+            <br>
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 167px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V3.5.0 / 08-April-2011<o:p></o:p></span></h3>
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+            <ul style="margin-top: 0cm;" type="square">
+              <li style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;" class="MsoNormal"><span style="font-family: Verdana; font-size: 10pt;">Template projects updated to save configuration time and easy the examples use.</span><br>
+<span style="font-family: Verdana; font-size: 10pt;"></span></li>
+              <li style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;" class="MsoNormal"><span style="font-family: Verdana; font-size: 10pt;">system_stm32f10x.c</span>
+<ul><li style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;" class="MsoNormal"><span style="font-family: Verdana; font-size: 10pt;">Add more 
+comments on how to use this driver.</span></li></ul>
+              </li>
+              <li style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;" class="MsoNormal"><span style="font-family: Verdana; font-size: 10pt;">stm32f10x_conf.h</span>
+<ul><li style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;" class="MsoNormal"><span style="font-family: Verdana; font-size: 10pt;">All 
+peripheral header files inclusion enabled.</span></li></ul><span style="font-family: Verdana; font-size: 10pt;"><br>
+                </span></li>
+
+            </ul>
+
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 558.05pt;"><span style="font-size: 10pt; font-family: Arial; color: white;">3.4.0
+- 10/15/2010</span></h3>
+
+            <ol style="margin-top: 0in;" start="1" type="1">
+<li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">General</span></i></b><i><span style="font-size: 10pt; font-family: Verdana;"> </span></i><i><span style="font-size: 10pt;"><o:p></o:p></span></i></li>
+            </ol>
+
+            <ul style="margin-top: 0in;" type="disc">
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add support for <span style="font-weight: bold;">STM32F10x High Density Value Line </span>devices.</span></li>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold; font-style: italic;">system_stm32f10x.c</span> file moved to project template directory.</span></li>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">"<span style="font-weight: bold;">STM32F10X_XL</span>" workspace name changed to "<span style="font-weight: bold;">STM3210E-EVAL_XL</span>" in all projects.<br>
+                </span></li>
+
+
+            </ul>
+            <ol style="margin-top: 0in; list-style-type: decimal;" start="3">
+<li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Template:&nbsp; Template projects</span></i></b><b><i><span style="font-size: 10pt;"><o:p></o:p></span></i></b></li>
+            </ol>
+
+
+            
+            <ul style="margin-top: 0in;" type="disc">
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded Workbench for ARM (EWARM)&nbsp;toolchain</span>
+              </li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> <span style="font-style: italic;">v5.50</span></span></li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use High-density value line devices with this&nbsp;version, click <a href="http://www.st.com/stonline/stappl/resourceSelector/app?page=resourceSelectorPage&amp;doctype=FIRMWARE&amp;SubClassID=1169" target="_blank">here</a> to download</span></li></ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x </span><span style="font-size: 10pt; font-family: Verdana;">High-density value line</span><span style="font-size: 10pt; font-family: Verdana;"> devices: </span><span style="font-size: 10pt; font-family: Verdana;">STM32F100E-EVAL</span></li>
+</ul></ul><span style="font-size: 10pt; font-family: Verdana;"></span>
+            <ul style="margin-top: 0in;" type="disc">
+            </ul>
+
+            <ul style="margin-top: 0in;" type="disc">
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Hitex&nbsp;IDE/Debugger </span><span style="font-size: 10pt; font-family: Verdana;">(</span><span style="font-size: 10pt; font-family: Verdana;">HiTOP</span><span style="font-size: 10pt; font-family: Verdana;">)&nbsp;toolchain</span>
+              </li>
+              <ul>
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> <span style="font-style: italic;">v</span></span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">5.40</span></li><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for </span><span style="font-size: 10pt; font-family: Verdana;">STM32F10x </span><span style="font-size: 10pt; font-family: Verdana;">High-density value line</span><span style="font-size: 10pt; font-family: Verdana;"> devices: </span><span style="font-size: 10pt; font-family: Verdana;">STM32F100E-EVAL</span></li>
+              </ul>
+</ul><span style="font-size: 10pt; font-family: Verdana;"></span>
+            <ul style="margin-top: 0in;" type="disc">
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller Development Kit (MDK-ARM)&nbsp;toolchain</span>
+              </li>
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> <span style="font-style: italic;">v</span></span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">4.12</span></li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use </span><span style="font-size: 10pt; font-family: Verdana;">High-density value line </span><span style="font-size: 10pt; font-family: Verdana;">devices with this&nbsp;version, click <a href="http://www.st.com/stonline/stappl/resourceSelector/app?page=resourceSelectorPage&amp;doctype=FIRMWARE&amp;SubClassID=1169" target="_blank">here</a> to download</span></li></ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x </span><span style="font-size: 10pt; font-family: Verdana;">High-density value line</span><span style="font-size: 10pt; font-family: Verdana;"> devices: STM32F100E-EVAL</span></li></ul>
+            </ul>
+
+            <ul style="margin-top: 0in;" type="disc">
+              
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Raisonance IDE RIDE7 (RIDE)&nbsp;toolchain</span>
+              </li>
+              <ul>
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span>&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"><span style="color: rgb(255, 102, 102);"><span style="color: black;"><span style="font-style: italic;">RIDE7 IDE:7.30.10, RKitARM for RIDE7:1.30.10</span> and later</span></span></span></li><li class="MsoNormal"><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for </span><span style="font-size: 10pt; font-family: Verdana;">STM32F10x </span><span style="font-size: 10pt; font-family: Verdana;">High-density value line</span><span style="font-size: 10pt; font-family: Verdana;"> devices: </span><span style="font-size: 10pt; font-family: Verdana;">STM32F100E-EVAL</span></li>
+              </ul>
+</ul><span style="font-size: 10pt; font-family: Verdana;"></span>
+            <ul style="margin-top: 0in;" type="disc">
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Atollic TrueSTUDIO STM32 (TrueSTUDIO)&nbsp;toolchain</span>
+              </li>
+
+              <ul>
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> <span style="font-style: italic;">v</span></span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">1.4.0</span></li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use </span><span style="font-size: 10pt; font-family: Verdana;">High-density value line </span><span style="font-size: 10pt; font-family: Verdana;">devices with this&nbsp;version, click <a href="http://www.st.com/stonline/stappl/resourceSelector/app?page=resourceSelectorPage&amp;doctype=FIRMWARE&amp;SubClassID=1169" target="_blank">here</a> to download</span></li></ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x </span><span style="font-size: 10pt; font-family: Verdana;">High-density value line</span><span style="font-size: 10pt; font-family: Verdana;"> devices: STM32F100E-EVAL</span></li>
+              </ul>
+
+            
+            
+            </ul>
+
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span>
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 558.05pt;"><span style="font-size: 10pt; font-family: Arial; color: white;">04/16/2010</span></h3>
+
+<ol style="margin-top: 0in;" start="1" type="1"><li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">General</span></i></b><i><span style="font-size: 10pt; font-family: Verdana;"> </span></i><i><span style="font-size: 10pt;"><o:p></o:p></span></i></li></ol>
+<ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add support for <span style="font-weight: bold;">STM32F10x XL-density </span>devices.</span></li><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add template project for <span style="font-weight: bold;">TrueSTUDIO</span> toolchain<br></span></li></ul><ol style="margin-top: 0in; list-style-type: decimal;" start="3"><li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Template:&nbsp; Template projects</span></i></b><b><i><span style="font-size: 10pt;"><o:p></o:p></span></i></b></li></ol>
+
+            <ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded Workbench for ARM (EWARM)&nbsp;toolchain</span>
+              </li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> <span style="font-style: italic;">v5.41</span>&nbsp;</span></li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use&nbsp;XL-density devices with this&nbsp;version, click <a href="http://www.st.com/stonline/stappl/resourceSelector/app?page=resourceSelectorPage&amp;doctype=FIRMWARE&amp;SubClassID=1169" target="_blank">here</a> to download</span></li></ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x XL-density&nbsp;devices: STM32F10X_XL</span></li></ul></ul><ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Hitex&nbsp;IDE/Debugger </span><span style="font-size: 10pt; font-family: Verdana;">(</span><span style="font-size: 10pt; font-family: Verdana;">HiTOP</span><span style="font-size: 10pt; font-family: Verdana;">)&nbsp;toolchain</span>
+              </li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> <span style="font-style: italic;">v</span></span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">5.32</span></li><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x XL-density&nbsp;devices: STM32F10X_XL</span></li></ul></ul><span style="font-size: 10pt; font-family: Verdana;"></span><ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller Development Kit (MDK-ARM)&nbsp;toolchain</span>
+              </li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> <span style="font-style: italic;">v</span></span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">4.10</span></li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use&nbsp;XL-density devices with this&nbsp;version, click <a href="http://www.st.com/stonline/stappl/resourceSelector/app?page=resourceSelectorPage&amp;doctype=FIRMWARE&amp;SubClassID=1169" target="_blank">here</a> to download</span></li></ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x XL-density&nbsp;devices: STM32F10X_XL</span></li></ul></ul><span style="font-size: 10pt; font-family: Verdana;"></span><ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Raisonance IDE RIDE7 (RIDE)&nbsp;toolchain</span>
+              </li><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span>&nbsp;</span><span style="font-size: 10pt; font-family: Verdana;"><span style="color: rgb(255, 102, 102);"><span style="color: black;"><span style="font-style: italic;">RIDE7 IDE:7.28.10.0075, RKitARM for RIDE7:1.24.10</span> and later</span></span></span></li><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x XL-density&nbsp;devices: STM32F10X_XL</span></li></ul></ul><span style="font-size: 10pt; font-family: Verdana;"></span><ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Atolic TrueSTUDIO toolchain</span>
+              </li><ul><li><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">Used version:</span> </span><span style="font-size: 10pt; font-family: Verdana; font-style: italic;">v1.1.0</span></li></ul><ul><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">A software patch is needed to use&nbsp;XL-density devices with this&nbsp;version, click <a href="http://www.st.com/stonline/stappl/resourceSelector/app?page=resourceSelectorPage&amp;doctype=FIRMWARE&amp;SubClassID=1169" target="_blank">here</a> to download</span></li></ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Workspaces provided for all supported STM32F10x devices</span></li></ul></ul><span style="font-size: 10pt; font-family: Verdana;"><br></span>
+<h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 558.05pt;"><span style="font-size: 10pt; font-family: Arial; color: white;">3.2.0
+- 03/01/2010</span></h3>
+<ol style="margin-top: 0in;" start="1" type="1">
+<li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">General</span></i></b><i><span style="font-size: 10pt; font-family: Verdana;"> </span></i><i><span style="font-size: 10pt;"><o:p></o:p></span></i></li>
+</ol>
+<ul style="margin-top: 0in;" type="disc">
+
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add support
+for&nbsp;<b>STM32 Low-density Value line (STM32F100x4/6) and
+Medium-density Value line (STM32F100x8/B) devices</b>.</span></li>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Update different projects to the latest toolchains versions. </span><span style="font-size: 10pt;"><o:p></o:p></span></li>
+
+</ul>
+<ol style="margin-top: 0in;" start="2" type="1">
+              <li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Template:&nbsp; Template source</span></i></b></li>
+</ol>
+            <ul style="margin-top: 0in;" type="disc">
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">main.c file updated to support the STM32 Value line devices and STM32100B-EVAL board.</span><br>
+              </li>
+            </ul>
+            <ol style="margin-top: 0in; list-style-type: decimal;" start="3">
+              <li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Template:&nbsp; Template projects</span></i></b><b><i><span style="font-size: 10pt;"><o:p></o:p></span></i></b></li>
+
+            </ol>
+
+            <ul style="margin-top: 0in;" type="disc">
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">IAR Embedded Workbench for ARM (EWARM) software toolchain</span>
+              </li>
+              <ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Version 5.41</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x Medium-density Value line devices: STM32100B-EVAL.</span></li>
+              </ul>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"> </span><span style="font-size: 10pt; font-family: Verdana;">Hitex HiTOP IDE/Debugger </span><span style="font-size: 10pt; font-family: Verdana;">(</span><span style="font-size: 10pt; font-family: Verdana;">HiTOP</span><span style="font-size: 10pt; font-family: Verdana;">) software toolchain</span>
+              </li>
+              <ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Version 5.32</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x Medium-density Value line devices: STM32100B-EVAL.</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add cstart_thumb2.asm file to support new CMSIS V1.30 version. This file includes the SystemInit() function call.<br>
+</span></li>
+              </ul>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Raisonance IDE RIDE7 (RIDE) software toolchain</span>
+              </li>
+              <ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Version: RIDE7 IDE:7.24.09, RKitARM for RIDE7:1.24.10</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x Medium-density Value line devices: STM32100B-EVAL.</span></li>
+              </ul>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller Development Kit (RVMDK) software toolchain</span>
+              </li>
+              <ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Version 4.03</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add a new workspace for STM32F10x Medium-density Value line devices: STM32100B-EVAL.</span></li>
+              </ul>
+
+            </ul>
+
+<ul style="margin-top: 0in;" type="disc">
+
+</ul>
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><a name="License"></a><span style="font-size: 12pt; color: white;">License<o:p></o:p></span></h2>
+<p class="MsoNormal" style="margin: 4.5pt 0cm;"><span style="font-size: 10pt; font-family: Verdana; color: black;">The
+enclosed firmware and all the related documentation are not covered by
+a License Agreement, if you need such License you can contact your
+local STMicroelectronics office.<u1:p></u1:p><o:p></o:p></span></p>
+<p class="MsoNormal"><b style=""><span style="font-size: 10pt; font-family: Verdana; color: black;">THE
+PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO
+SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR
+ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY
+CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY
+CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH
+THEIR PRODUCTS. <o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="color: black;"><o:p>&nbsp;</o:p></span></p>
+<div class="MsoNormal" style="text-align: center;" align="center"><span style="color: black;">
+<hr align="center" size="2" width="100%"></span></div>
+<p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Verdana; color: black;">For
+complete documentation on </span><span style="font-size: 10pt; font-family: Verdana;">STM32(<span style="color: black;">CORTEX M3) 32-Bit Microcontrollers
+visit </span><u><span style="color: blue;"><a href="http://www.st.com/stm32" target="_blank">www.st.com/STM32</a></span></u></span><span style="color: black;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body></html>

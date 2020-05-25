@@ -1,0 +1,102 @@
+// Hitex/We/04.02.2008
+//      
+// StartupScript Script file for HiTOP Debugger
+// Target Hitex evaluation board with STM32Fxxx
+// Flash application
+
+//#########################################################################################
+// Enable APB2 GPIOA .. GPIOG + AFIO Peripheral Clock
+// 
+// Register RCC_APB2ENR		Adr: 0x40021000 + Offs. 0x18	value 0x1FD    
+//#########################################################################################
+OUTPUT DWORD TO 0x40021014 = 0x00000114
+OUTPUT DWORD TO 0x40021018 = 0x000001FD 
+
+
+//#########################################################################################
+//	NOR Datalines GPIOD, GPIOE
+// 
+// Set Bits 0,1,8,9,10,14,15 of Port D to PushPull, 50Mhz Speed
+// Register GPIOD_CRL		Adr: 0x40011400 + Offs. 0x00	value 0x444444BB
+// Register GPIOD_CRH		Adr: 0x40011400 + Offs. 0x04	value 0xBB444BBB
+//
+// Set Bits 7,8,9,10,11,12,13,14,15 of Port E to PushPull, 50Mhz Speed
+// Register GPIOD_CRL		Adr: 0x40011800 + Offs. 0x00	value 0xB4444444
+// Register GPIOD_CRH		Adr: 0x40011800 + Offs. 0x04	value 0xBBBBBBBB
+//   
+//#########################################################################################
+// Port D
+OUTPUT DWORD TO 0x40011400 = 0x44BB44BB
+OUTPUT DWORD TO 0x40011404 = 0xBBBBBBBB
+// Port E 
+OUTPUT DWORD TO 0x40011800 = 0xBBBBBB44
+OUTPUT DWORD TO 0x40011804 = 0xBBBBBBBB
+ 
+//#########################################################################################
+//	NOR Addresslines GPIOF, GPIOG
+// 
+// Set Bits 0,1,2,3,4,5,12,13,14,15 of Port F to PushPull, 50Mhz Speed
+// Register GPIOF_CRL		Adr: 0x40011C00 + Offs. 0x00	value 0x444BBBBB
+// Register GPIOF_CRH		Adr: 0x40011C00 + Offs. 0x04	value 0xBBBB4444
+//
+// Set Bits 0,1,2,3,4,5,13,14 of Port G to PushPull, 50Mhz Speed
+// Register GPIOG_CRL		Adr: 0x40012000 + Offs. 0x00	value 0x44BBBBBB
+// Register GPIOG_CRH		Adr: 0x40012000 + Offs. 0x04	value 0x4BB44444
+// 
+// Set Bits 11,12,13 of Port D to PushPull, 50Mhz Speed
+// Register GPIOD_CRH		Adr: 0x40011400 + Offs. 0x04	value 0xBBBBBBBB
+//
+// Set Bits 2,3,4,5,6 of Port E to PushPull, 50Mhz Speed
+// Register GPIOD_CRL		Adr: 0x40011800 + Offs. 0x00	value 0xB4444444
+//#########################################################################################
+// Port F
+OUTPUT DWORD TO 0x40011C00 = 0x44BBBBBB
+OUTPUT DWORD TO 0x40011C04 = 0xBBBB4444
+// Port G 
+OUTPUT DWORD TO 0x40012000 = 0x44BBBBBB
+OUTPUT DWORD TO 0x40012004 = 0x4BB444B4
+// Port D
+//OUTPUT DWORD TO 0x40011404 = 0xBBBBBBBB
+// Port E 
+//OUTPUT DWORD TO 0x40011800 = 0xBBBBBBB4
+
+//#########################################################################################
+//	NOE and NWE Configuration GPIOD
+// 
+// Set Bits 4,5 of Port D to PushPull, 50Mhz Speed
+// Register GPIOD_CRL		Adr: 0x40011400 + Offs. 0x00	value 0x44BB44BB
+//
+//#########################################################################################
+// Port D
+//OUTPUT DWORD TO 0x40011400 = 0x44BB44BB
+
+//#########################################################################################
+//	NE2 Configuration GPIOG
+// 
+// Set Bits 9 Port G to PushPull, 50Mhz Speed
+// Register GPIOD_CRH		Adr: 0x40012000 + Offs. 0x04	value 0x4BB444B4
+//
+//#########################################################################################
+// Port G
+//OUTPUT DWORD TO 0x40012004 = 0x4BB444B4
+
+//#########################################################################################
+//	FSMC Configuration
+//
+//	Bank1 is used
+//  if another Bank is required, then adjust the Register Addresses
+// 
+// Register FSMC_BCR				value 0x00001059
+// Register FSMC_BTR				value 0x00010112
+// Register FSMC_BWTR			value 0x0FFFFFFF
+//#########################################################################################
+
+OUTPUT DWORD TO 0xA0000000 = 0x000030DB
+
+
+OUTPUT DWORD TO 0xA0000008 = 0x00001059
+
+OUTPUT DWORD TO 0xA000000C= 0x30010112
+
+OUTPUT DWORD TO 0xA0000104 = 0x0FFFFFFF
+

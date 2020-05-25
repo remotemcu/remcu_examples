@@ -1,0 +1,5 @@
+-d"./settings/STM32F10x_offset.lsl"
+--optimize=0
+--map-file-format=2
+$(LinkObjects)
+--output=.\Objects\$(Target)

@@ -1,0 +1,441 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head>
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="File-List" href="Library_files/filelist.xml">
+<link rel="Edit-Time-Data" href="Library_files/editdata.mso"><!--[if !mso]> <style> v\:* {behavior:url(#default#VML);} o\:* {behavior:url(#default#VML);} w\:* {behavior:url(#default#VML);} .shape {behavior:url(#default#VML);} </style> <![endif]--><title>Release Notes for STM32F10x Standard Peripherals Library Examples</title><!--[if gte mso 9]><xml> <o:DocumentProperties> <o:Author>STMicroelectronics</o:Author> <o:LastAuthor>STMicroelectronics</o:LastAuthor> <o:Revision>37</o:Revision> <o:TotalTime>136</o:TotalTime> <o:Created>2009-02-27T19:26:00Z</o:Created> <o:LastSaved>2009-03-01T17:56:00Z</o:LastSaved> <o:Pages>1</o:Pages> <o:Words>522</o:Words> <o:Characters>2977</o:Characters> <o:Company>STMicroelectronics</o:Company> <o:Lines>24</o:Lines> <o:Paragraphs>6</o:Paragraphs> <o:CharactersWithSpaces>3493</o:CharactersWithSpaces> <o:Version>11.6568</o:Version> </o:DocumentProperties> </xml><![endif]--><!--[if gte mso 9]><xml> <w:WordDocument> <w:Zoom>110</w:Zoom> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" LatentStyleCount="156"> </w:LatentStyles> </xml><![endif]-->
+
+
+
+<style>
+<!--
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{mso-style-parent:"";
+margin:0in;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+h2
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:2;
+font-size:14.0pt;
+font-family:Arial;
+font-weight:bold;
+font-style:italic;}
+a:link, span.MsoHyperlink
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+p
+{mso-margin-top-alt:auto;
+margin-right:0in;
+mso-margin-bottom-alt:auto;
+margin-left:0in;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+@page Section1
+{size:8.5in 11.0in;
+margin:1.0in 1.25in 1.0in 1.25in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+mso-paper-source:0;}
+div.Section1
+{page:Section1;}
+-->
+</style><!--[if gte mso 10]> <style> /* Style Definitions */ table.MsoNormalTable {mso-style-name:"Table Normal"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; mso-style-noshow:yes; mso-style-parent:""; mso-padding-alt:0in 5.4pt 0in 5.4pt; mso-para-margin:0in; mso-para-margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:"Times New Roman"; mso-ansi-language:#0400; mso-fareast-language:#0400; mso-bidi-language:#0400;} </style> <![endif]--><!--[if gte mso 9]><xml> <o:shapedefaults v:ext="edit" spidmax="5122"/> </xml><![endif]--><!--[if gte mso 9]><xml> <o:shapelayout v:ext="edit"> <o:idmap v:ext="edit" data="1"/> </o:shapelayout></xml><![endif]--></head><body lang="EN-US" link="blue" vlink="blue">
+<div class="Section1">
+<p class="MsoNormal"><span style="font-family: Arial;"><o:p><br>
+</o:p></span></p>
+<div align="center">
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+<tbody>
+<tr>
+<td style="padding: 0cm;" valign="top">
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+<tbody>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-size: 8pt; font-family: Arial; color: blue;"><a href="../../Release_Notes.html">Back to Release page</a></span></td>
+          </tr>
+<tr style="">
+<td style="padding: 1.5pt;">
+<h1 style="margin-bottom: 18pt; text-align: center;" align="center"><span style="font-size: 20pt; font-family: Verdana; color: rgb(51, 102, 255);">Release
+Notes for STM32F10x Standard Peripherals Library Examples
+(StdPeriph_Examples)</span><span style="font-size: 20pt; font-family: Verdana;"><o:p></o:p></span></h1>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;">Copyright 2011 STMicroelectronics</span><span style="color: black;"><u1:p></u1:p><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;"><img alt="" id="_x0000_i1025" src="../../_htmresc/logo.bmp" style="border: 0px solid ; width: 86px; height: 65px;"></span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span style="font-family: Arial; display: none;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" width="900">
+<tbody>
+<tr>
+<td style="padding: 0cm;" valign="top">
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><span style="font-size: 12pt; color: white;">Contents<o:p></o:p></span></h2>
+<ol style="margin-top: 0cm;" start="1" type="1">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><a href="#History">STM32F10x Standard Peripherals Library
+Examples update History</a><o:p></o:p></span></li>
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><a href="#License">License</a><o:p></o:p></span></li>
+</ol>
+<span style="font-family: &quot;Times New Roman&quot;;">
+</span>
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><a name="History"></a><span style="font-size: 12pt; color: white;">STM32F10x Standard
+Peripherals Library Examples update History</span></h2><br>
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 167px;"><span style="font-size: 10pt; font-family: Arial; color: white;">V3.5.0 / 08-April-2011<o:p></o:p></span></h3>
+            <p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt;"><b style=""><u><span style="font-size: 10pt; font-family: Verdana; color: black;">Main
+Changes<o:p></o:p></span></u></b></p>
+
+            <ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">Add two new examples: <br>
+</span></li>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">MPU</span>:
+This example presents the MPU features on STM32F10x XL-density devices
+and it can be easily ported to any other STM32 device supporting MPU.<br style="text-decoration: underline;">
+                  </span></li>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">TIM DMA Burst</span>:This example shows how to update the TIM1 channel1 period and the duty cycle using the TIM1 DMA burst feature.</span></li>
+              </ul>
+
+              <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;">FSMC OneNAND, GPIO IO Toggle, EXTI, Lib_DEBUG, IWDG, WWDG, NVIC, SDIO and SysTick examples updated.</span></li>
+              <ul>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">FSMC OneNAND</span> example updated according to the last stm32100e_eval_fsmc_onenand.h/.c driver modification</span></li>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">SDIO</span> example </span><span style="font-size: 10pt; font-family: Verdana;">enhanced</span><span style="font-size: 10pt; font-family: Verdana;"> according to the last stm32_eval_sdio_sd.h/.c driver enhancement: SD Card driver is running up to 24MHz. Refer to </span><span style="font-size: 10pt; font-family: Verdana;">STM32_EVAL release notes.</span></li>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">GPIO IO Toggle</span> is updated to achieve maximum IO toggling frequency (HLCK/4).</span></li>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">EXTI</span> example updated to give more details on how to configure an external interrupt.</span></li>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">IWDG</span> </span><span style="font-size: 10pt; font-family: Verdana;">enhanced</span><span style="font-size: 10pt; font-family: Verdana;"> is updated to use accurate timeout thanks to LSI frequency measure with Timers.</span></li>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">NVIC and SysTick</span> examples enhanced to provide more details on how to use them with CMSIS layer.</span></li>
+                <li class="MsoNormal" style="color: black; margin-top: 4.5pt; margin-bottom: 4.5pt;"><span style="font-size: 10pt; font-family: Verdana;"><span style="text-decoration: underline;">WWDG</span> enhanced to provide more details on how to use the peripheral and how to use its interrupt.<br>
+                  </span></li>
+              </ul>
+
+            </ul>
+
+            <h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 558.05pt;"><span style="font-size: 10pt; font-family: Arial; color: white;">3.4.0
+- 10/15/2010</span></h3>
+
+            <ol style="margin-top: 0in;" start="1" type="1">
+<li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">General</span></i></b><i><span style="font-size: 10pt; font-family: Verdana;"> </span></i><i><span style="font-size: 10pt;"><o:p></o:p></span></i></li>
+            </ol>
+
+            <ul style="margin-top: 0in;" type="disc">
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add support for <span style="font-weight: bold;">STM32F10x High-density Value line</span> devices.</span></li>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">"<span style="font-weight: bold; font-style: italic;">system_stm32f10x.c</span>" placed in each example folder.<br>
+</span></li>
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add new examples: <br>
+                </span></li>
+              <ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">FSMC OneNAND. </span><br>
+                  <span style="font-size: 10pt; font-family: Verdana;"></span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">I2C EEPROM, </span><span style="font-size: 10pt; font-family: Verdana;">I2C TSENSOR and I2C IOExpander. </span><br>
+<span style="font-size: 10pt; font-family: Verdana;"></span></li>
+              </ul>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Remove </span><span style="font-size: 10pt; font-family: Verdana;">old </span><span style="font-size: 10pt; font-family: Verdana;">I2C examples: DualAddress, 10bitAddress, Interrupt, </span><span style="font-size: 10pt; font-family: Verdana;">M24C08_EEPROM</span><span style="font-size: 10pt; font-family: Verdana;"> and SMBus. <br>
+</span></li>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Update SPI GPIO Configurations in all SPI examples: MISO is configured as Input floating.<br>
+</span></li>
+
+            </ul>
+
+            <ol style="margin-top: 0in;" start="2" type="1">
+<li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Examples</span></i></b><b><i><span style="font-size: 10pt;"><o:p></o:p></span></i></b></li>
+            </ol>
+
+            <ul style="margin-top: 0in;" type="disc">
+<li class="MsoNormal" style=""><i><u><span style="font-size: 10pt; font-family: Verdana;">&nbsp;FLASH</span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u><u><span style="font-size: 10pt;"><o:p></o:p></span></u></li>
+            </ul>
+
+            
+            <ul style="margin-top: 0in;" type="disc">
+<ul style="margin-top: 0in;" type="circle"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Write_Protection modified to keep user configuration (already protected pages) and when Options bytes are not erased.</span><span style="font-size: 10pt; font-family: Verdana;"></span></li></ul>
+            </ul>
+            <ul style="margin-top: 0in;" type="disc">
+<li class="MsoNormal" style=""><i><u><span style="font-size: 10pt; font-family: Verdana;">FSMC</span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u><u><span style="font-size: 10pt;"><o:p></o:p></span></u>
+
+            
+            
+                <ul style="margin-top: 0in;" type="circle">
+                  <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New
+example OneNAND: this example shows how to configure the FSMC to drive
+the OneNAND memory mounted&nbsp; on STM32100E-EVAL board. </span><span style="font-size: 10pt; font-family: Verdana;"></span></li>
+                </ul>
+                <br>
+<i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u></i></li>
+              <li class="MsoNormal" style=""><i><u><span style="font-size: 10pt; font-family: Verdana;">I2C</span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u></li>
+
+            </ul>
+
+
+            
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Old Examples removed.</span><br>
+<span style="font-size: 10pt; font-family: Verdana;"></span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New example EEPROM (based on old </span><span style="font-size: 10pt; font-family: Verdana;">M24C08_EEPROM example</span><span style="font-size: 10pt; font-family: Verdana;">):
+Using the latest version of I2C EEPROM driver (use of DMA to manage
+transfer from/to I2C memory). For more details refer to STM32_EVAL
+release note "Release_Notes_for_STM32_EVAL.html".</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New
+example "I2C TSENSOR": this example shows how to use the I2C to
+communicate with&nbsp; an STLM75 (or a compatible device) I2C
+temperature sensor mounted on the&nbsp; evaluation board and used to
+get instantaneous external temperature<br>
+(-55°C to +125°C). This example uses the latest I2C TSensor driver </span><span style="font-size: 10pt; font-family: Verdana;">(use of DMA to
+manage transfer from/to I2C device). For more details refer to
+STM32_EVAL release note "Release_Notes_for_STM32_EVAL.html".</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New
+example "I2C IOExpander": this example shows how to configure and to
+use the IO Expander STMPE811&nbsp; in order to control input Joystick
+IOs, output IOs and the Touch Screen feature. </span><span style="font-size: 10pt; font-family: Verdana;">This example uses the latest I2C IO Expander driver </span><span style="font-size: 10pt; font-family: Verdana;">(use of DMA to
+manage transfer from/to I2C device). For more details refer to
+STM32_EVAL release note "Release_Notes_for_STM32_EVAL.html".</span></li>
+</ul>
+            </ul>
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">SPI</span></u></i><br>
+</li>
+            </ul>
+
+
+
+
+            
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">Update SPI GPIO Configurations in all SPI examples: MISO is configured as Input floating.</span></li></ul>
+            </ul>
+            <br>
+<h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 558.05pt;"><span style="font-size: 10pt; font-family: Arial; color: white;">3.3.0
+- 04/16/2010</span></h3>
+<ol style="margin-top: 0in;" start="1" type="1">
+              <li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">General</span></i></b><i><span style="font-size: 10pt; font-family: Verdana;"> </span></i><i><span style="font-size: 10pt;"><o:p></o:p></span></i></li>
+</ol>
+<ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add support for <span style="font-weight: bold;">STM32F10x XL-density</span> devices.</span></li><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add new examples: Flash Dual_Boot, TIM9_OCToggle and TIM10_PWMOutput.&nbsp;</span><span style="font-size: 10pt;"><o:p></o:p></span></li></ul>
+<ol style="margin-top: 0in;" start="2" type="1"><li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Examples</span></i></b><b><i><span style="font-size: 10pt;"><o:p></o:p></span></i></b></li></ol>
+<ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><i><u><span style="font-size: 10pt; font-family: Verdana;">&nbsp;FLASH</span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u><u><span style="font-size: 10pt;"><o:p></o:p></span></u></li></ul>
+            <ul style="margin-top: 0in;" type="disc"><ul style="margin-top: 0in;" type="circle"><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New example "</span><span style="font-size: 10pt; font-family: Verdana;">Dual_Boot": this example demonstrates the dual Flash boot capability of XL-Density devices;<br>boot from Flash memory Bank1 or Bank2.</span></li><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Update "Program" and "Write_Protection" to support </span><span style="font-size: 10pt; font-family: Verdana;"><span style="font-weight: bold;">XL-density</span> devices (up to 1Mbyte of Flash memory)</span><span style="font-size: 10pt; font-family: Verdana;">.</span></li></ul></ul><ul style="margin-top: 0in;" type="disc"><li class="MsoNormal" style=""><i><u><span style="font-size: 10pt; font-family: Verdana;">I2C</span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u></li></ul>
+
+            <ul style="margin-top: 0in;" type="circle"><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">M24C08_EEPROM: updated to use the latest version of I2C EEPROM driver (use of DMA to manage transfer from/to I2C memory).</span></li></ul></ul><ul><li><i><u><span style="font-size: 10pt; font-family: Verdana;">TIM</span></u></i><br>
+  </li></ul>
+
+
+
+            <ul style="margin-top: 0in;" type="circle"><ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New example "TIM9_OCToggle"</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">: this example shows how to configure the TIM9 peripheral to generate two different signals with two different frequencies.<br>
+                  </span></li><li class="MsoNormal"><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">New example "TIM10_PWMOutput"</span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;">: this example shows how to configure the TIM10 peripheral in PWM (Pulse Width Modulation) mode.</span></li></ul></ul>
+<h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 558.05pt;"><span style="font-size: 10pt; font-family: Arial; color: white;">3.2.0
+- 03/01/2010</span></h3>
+<ol style="margin-top: 0in;" start="1" type="1">
+<li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">General</span></i></b><i><span style="font-size: 10pt; font-family: Verdana;"> </span></i><i><span style="font-size: 10pt;"><o:p></o:p></span></i></li>
+</ol>
+<ul style="margin-top: 0in;" type="disc">
+
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add support
+for&nbsp;<b>STM32 Low-density Value line (STM32F100x4/6) and
+Medium-density Value line (STM32F100x8/B) devices</b> for almost examples.</span></li>
+              <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add new examples: HDMI-CEC, Dual CAN, PVD and TIM15 Complementary Signals.</span><span style="font-size: 10pt;"><o:p></o:p></span></li>
+
+</ul>
+<ol style="margin-top: 0in;" start="2" type="1">
+<li class="MsoNormal" style=""><b><i><span style="font-size: 10pt; font-family: Verdana;">STM32F10x_StdPeriph_Examples</span></i></b><b><i><span style="font-size: 10pt;"><o:p></o:p></span></i></b></li>
+</ol>
+<ul style="margin-top: 0in;" type="disc">
+<li class="MsoNormal" style=""><i><u><span style="font-size: 10pt; font-family: Verdana;">CAN</span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u><u><span style="font-size: 10pt;"><o:p></o:p></span></u></li>
+</ul>
+            <ul style="margin-top: 0in;" type="disc">
+
+              <ul style="margin-top: 0in;" type="circle">
+
+<li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">Add new example Dual CAN: This example shows how to configure the CAN1 and CAN2 peripherals to send and <br>
+receive CAN frames in normal mode. The sent frames are used to control Leds by pressing KEY or Tamper push buttons.</span></li>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">CAN Normal example renamed to CAN Networking example.<br>
+</span></li>
+
+              </ul>
+
+            </ul>
+            <ul style="margin-top: 0in;" type="disc">
+<li class="MsoNormal" style=""><i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u><u><span style="font-size: 10pt;"><o:p></o:p></span></u><i><u><span style="font-size: 10pt; font-family: Verdana;">CEC</span></u></i><u><span style="font-size: 10pt; font-family: Verdana;"></span></u></li>
+            </ul>
+
+            <ul style="margin-top: 0in;" type="circle">
+              <ul>
+                <li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New example: This example provides a basic communication between two HDMI-CEC devices using interrupts.</span></li>
+              </ul>
+            </ul>
+            <ul>
+              <li><i><u><span style="font-size: 10pt; font-family: Verdana;">PWR</span></u></i><br>
+              </li>
+            </ul>
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New example PVD: This example shows how to configure the programmable voltage detector using an external interrupt line. <br>
+</span></li></ul>
+            </ul>
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">TIM</span></u></i><br>
+  </li>
+            </ul>
+
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">New example </span><span style="font-size: 10pt; font-family: Verdana;">TIM15 Complementary Signals</span><span style="font-size: 10pt; font-family: Verdana;">: This example shows how to configure the TIM15 peripheral to generate one <br>
+complementary TIM15 signal, to insert a defined dead time value, to use the break feature and to lock the desired parameters. <br>
+                  </span></li>
+                <li class="MsoNormal"><span style="font-size: 10pt; font-family: Verdana;">Cascade_Synchro,Parallel_Synchro,
+ExtTrigger_Synchro, TIM1_Synchro examples main files: Add
+TIM_SelectMasterSlaveMode() function call for all slaves and masters.</span></li>
+</ul>
+            </ul>
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">I2C</span></u></i><br>
+  </li>
+            </ul>
+
+
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">EEPROM
+example: the i2c_ee.h/.c files are removed. The example is using the
+new Serial EEPROM driver stm32_eval_i2c_ee.h/.c driver available under
+Utilities\STM32_EVAL\Common.</span><span style="font-size: 10pt; font-family: Verdana;"><br>
+      </span></li></ul>
+            </ul>
+
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">SPI</span></u></i><br>
+  </li>
+            </ul>
+
+
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">M25P64_FLASH example renamed to SPI_FLASH:
+the spi_flash.h/.c files are removed. The example is using the new Serial SPI FLASH
+driver stm32_eval_spi_flash.h/.c driver available under
+Utilities\STM32_EVAL\Common.</span><span style="font-size: 10pt; font-family: Verdana;">
+      </span></li></ul>
+            </ul>
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span>
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">SDIO</span></u></i><br>
+  </li>
+            </ul>
+
+
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">The sdcard.h/.c files are removed. The example is using the new SD Card
+driver stm32_eval_sdio_sd.h/.c driver available under
+Utilities\STM32_EVAL\Common.</span><span style="font-size: 10pt; font-family: Verdana;">
+      </span></li></ul>
+            </ul>
+
+            <span style="font-size: 10pt; font-family: Verdana;">
+            </span>
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">FSMC</span></u></i><br>
+  </li>
+            </ul>
+
+
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">All FSMC example:
+the fsmc_sram.h/.c, </span><span style="font-size: 10pt; font-family: Verdana;">fsmc_nor.h/.c and </span><span style="font-size: 10pt; font-family: Verdana;">fsmc_nand.h/.c</span><span style="font-size: 10pt; font-family: Verdana;"> files are removed. The examples are using the new FSMC memories
+drivers stm3210e_eval_fsmc_sram.h/.c, </span><span style="font-size: 10pt; font-family: Verdana;">stm3210e_eval_fsmc_nor.h/.c and </span><span style="font-size: 10pt; font-family: Verdana;">stm3210e_eval_fsmc_nand.h/.c</span><span style="font-size: 10pt; font-family: Verdana;"> drivers available under
+Utilities\STM32_EVAL\STM3210E_EVAL.</span><span style="font-size: 10pt; font-family: Verdana;">
+      </span></li></ul>
+            </ul>
+
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">DMA</span></u></i><br>
+  </li>
+            </ul>
+
+
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">FSMC example:
+the fsmc_sram.h/.c files are removed. The example is using the new FSMC SRAM
+driver stm3210e_eval_fsmc_sram.h/.c driver available under
+Utilities\STM32_EVAL\</span><span style="font-size: 10pt; font-family: Verdana;">STM3210E_EVAL</span><span style="font-size: 10pt; font-family: Verdana;">.</span><span style="font-size: 10pt; font-family: Verdana;">
+      </span></li></ul>
+            </ul>
+
+            <ul>
+<li><i><u><span style="font-size: 10pt; font-family: Verdana;">ADC</span></u></i><br>
+  </li>
+            </ul>
+
+
+
+
+            <ul style="margin-top: 0in;" type="circle">
+<ul><li class="MsoNormal" style=""><span style="font-size: 10pt; font-family: Verdana;">All ADC examples are using a dedicated system_stm32f10x.c file to configure the system core clock to 56MHz.</span><span style="font-size: 10pt; font-family: Verdana;"> <br>
+      </span></li></ul>
+            </ul>
+
+            <span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"></span><span style="font-size: 10pt; font-family: Verdana;"></span>
+<ul style="margin-top: 0in;" type="disc">
+
+</ul>
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><a name="License"></a><span style="font-size: 12pt; color: white;">License<o:p></o:p></span></h2>
+<p class="MsoNormal" style="margin: 4.5pt 0cm;"><span style="font-size: 10pt; font-family: Verdana; color: black;">The
+enclosed firmware and all the related documentation are not covered by
+a License Agreement, if you need such License you can contact your
+local STMicroelectronics office.<u1:p></u1:p><o:p></o:p></span></p>
+<p class="MsoNormal"><b style=""><span style="font-size: 10pt; font-family: Verdana; color: black;">THE
+PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO
+SAVE TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR
+ANY DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY
+CLAIMS ARISING FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY
+CUSTOMERS OF THE CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH
+THEIR PRODUCTS. <o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style="color: black;"><o:p>&nbsp;</o:p></span></p>
+<div class="MsoNormal" style="text-align: center;" align="center"><span style="color: black;">
+<hr align="center" size="2" width="100%"></span></div>
+<p class="MsoNormal" style="margin: 4.5pt 0cm 4.5pt 18pt; text-align: center;" align="center"><span style="font-size: 10pt; font-family: Verdana; color: black;">For
+complete documentation on </span><span style="font-size: 10pt; font-family: Verdana;">STM32(<span style="color: black;">CORTEX M3) 32-Bit Microcontrollers
+visit </span><u><span style="color: blue;"><a href="http://www.st.com/stm32" target="_blank">www.st.com/STM32</a></span></u></span><span style="color: black;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body></html>
