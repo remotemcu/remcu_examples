@@ -1,4 +1,4 @@
-# REMCU examples for STM32F103 board
+# REMCU examples for STM32F103C8T6 Blue Pill board
 ## Overview
 
 These simple examples demonstrate how to easily expand hardware of a Raspberry Pi board using one dollar STM32F103C8T6 microcontroller and some wires.  
