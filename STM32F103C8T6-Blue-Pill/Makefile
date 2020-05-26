@@ -10,4 +10,4 @@ all:
 	$(CC) CAN_receiver.c $(C_FLAGS) $(L_FLAGS) -o CAN_receiver
 
 clean:
-	rm -v DAC_DMA_Escalator TriangleWave ADC_line
+	rm -v CAN_send CAN_receiver ADC_line

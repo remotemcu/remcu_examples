@@ -1,6 +1,6 @@
 import ctypes
 import sys
-from remcu_include.STM32F10X_HD_StdPeriph_Lib import *
+from remcu_include.STM32F10X_MD_StdPeriph_Lib import *
 
 if sys.platform.startswith('win32'): 	#Windows
     remcu = ctypes.WinDLL("remcu.dll")
