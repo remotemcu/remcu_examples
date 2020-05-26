@@ -21,7 +21,7 @@ The code controlling MCU peripheral module have been taken from  [example](STM32
 
 ## 1. Raspberry Pi
 
-A video tutorial on how to build and run the similar examples on Raspberry Pi computer:
+A video tutorial on how to build and run the [similar examples](../STM32F103RCT6) on Raspberry Pi computer:
 
 [![Raspberry](img/preview.png)](https://youtu.be/JdBabbC5Prk)
 
@@ -29,7 +29,8 @@ A video tutorial on how to build and run the similar examples on Raspberry Pi co
  * A [Raspberry Pi v1](https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/) board
  * A board with the STM32F030 or stm32F051 device. There are demonstration on [STM32F030 DEMO BOARD V1.1](https://stm32-base.org/boards/STM32F030F4P6-STM32F030-DEMO-BOARD-V1.1.html) and [LC Technology STM32F051C8T6](https://stm32-base.org/boards/STM32F051C8T6-LC-Technology)
  * 4 wires to connect Pi with MCU
- * A specify [***image***](https://drive.google.com/file/d/1ENxD3C24uYwEIWcnSwN8rQULNaNKf-ww/view?usp=sharing) of Raspberry containing these examples,  prebuild OpenOCD utility and REMCU library.
+ * A specify [***image***](https://drive.google.com/file/d/1ENxD3C24uYwEIWcnSwN8rQULNaNKf-ww/view?usp=sharing) of Raspberry containing these examples, prebuild OpenOCD utility and REMCU library  
+  or install/download these components to your Raspbian filesystem manually. [Instructions](#manual-configuration-installation-all-necessary-components)
 
 ### Prepare
 Download the [***image***](https://drive.google.com/file/d/1ENxD3C24uYwEIWcnSwN8rQULNaNKf-ww/view?usp=sharing) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
@@ -55,9 +56,9 @@ Run the “openocd_stm32f0x.sh” scripts:
 
 Navigate to ‘examples_stm32f030’ or ‘examples_stm32f051’ directory depending on your board.
 
-#### If you want to use the REMCU Lib without flashing the image
+#### Manual configuration. Installation all necessary components
 That requires next:  
-Downlaod prebuild OpenOCD from [here](https://github.com/remotemcu/Raspbian_packages) to your Raspbian RootFS. The build have been tested on Raspberry Pi and we recommend it.  
+1. Downlaod prebuild OpenOCD from [here](https://github.com/remotemcu/Raspbian_packages) to your Raspbian RootFS. The build have been tested on Raspberry Pi and we recommend it.  
 
 ```bash
 git clone https://github.com/remotemcu/Raspbian_packages.git
@@ -70,12 +71,12 @@ cd Raspbian_packages/
 ./openocd_stm32f0x.sh
 ```
 
-Also you can install OpenOCD(version 0.10 or higher) from Raspbian's repo:  
+Another way you can install OpenOCD(version 0.10 or higher) from Raspbian's repo:  
 
 ```bash
 sudo apt-get install openocd
 ```
-Connect this Raspberry GPIO pins to debug port of the MCU using scheme above and run OpenOCD utility  
+In this case, run OpenOCD utility this way:  
 
 ```bash
 sudo openocd -f interface/raspberrypi-native.cfg -c "transport select swd" -f target/stm32f0x.cfg
@@ -86,14 +87,14 @@ https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspber
 or
 https://iosoft.blog/2019/01/28/raspberry-pi-openocd/
 
-Download these examples to Raspberry RootFS and go to STM32F030-51 directory  
+2. Download these examples to Raspberry RootFS and go to STM32F030-51 directory  
 
 ```bash
  git clone https://github.com/remotemcu/remcu_examples/
  cd STM32F030-51/
 ```
 
-Download REMCU Lib archive from [**download page**](https://remotemcu.com/download):  
+3. Download REMCU Lib archive from [**download page**](https://remotemcu.com/download):  
 Target - **STM32F030XX** or **STM32F051**
 Library - **StdPeriph_Lib**  
 Version - **V1.5.0**  
@@ -106,7 +107,7 @@ Operation system - **Raspbian**
 ![download lib](img/download_unix.png)
 </details>
 
-Extract it to the example folder  
+4. Extract it to the example folder  
 
 ```bash
 $pwd 
@@ -142,7 +143,7 @@ A small script [**adc_line.py**](adc_line.py) receives the ADC data and builds a
 Rotate the shaft and you will get the voltage versus time chart.  
 ![adc_line](img/adc_console.gif)  
 
-> Note that we didn’t develop the MCU firmware. Our Linux program directly works with ADC, DAC, DMA and RAM modules using a remote procedure execution of the Standard Peripheral Library. In more detail in [video](https://youtu.be/JdBabbC5Prk)   
+> Note that we didn’t develop the MCU firmware. Our Linux program directly works with ADC and GPIO modules using a remote procedure execution of the Standard Peripheral Library. In more detail in [video](https://youtu.be/JdBabbC5Prk)   
 
 
 The REMCU library can be ported to any version of the Raspberry Pi board and also on far less powerful and much more powerful embedded platforms  
