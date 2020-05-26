@@ -45,7 +45,7 @@ This image has a community version of the REMCU lib which works through debug in
 </details>
 
 
-Run the “OpenOCD.sh” scripts:  
+Run the “openocd.sh” scripts:  
 <details>
   <summary> OpenOCD result
 <b>(click here) </b></summary>
@@ -54,7 +54,7 @@ Run the “OpenOCD.sh” scripts:
 </details>
 
 
-Navigate to ‘examples’ directory and run ‘make’ command. Several applications were created.  
+Navigate to ‘STM32F103C8T6-Blue-Pill’ directory and run ‘make’ command. Several applications were created.  
 <details>
   <summary> "make" result
 <b>(click here) </b></summary>
@@ -236,7 +236,7 @@ Build examples, just  ***make*** command:
   <summary> show
 	<b>(click here) </b></summary>
 
-![make_linux](img/make_linux.png)  
+![make_linux](img/make.png)  
 </details>
 
 Connect the STM32 board with debugger to PC:  
