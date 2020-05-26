@@ -46,7 +46,7 @@ This image has a community version of the REMCU lib which works through debug in
 </details>
 
 
-Run the “OpenOCD.sh” scripts:  
+Run the “openocd.sh” scripts:  
 <details>
   <summary> OpenOCD result
 <b>(click here) </b></summary>
