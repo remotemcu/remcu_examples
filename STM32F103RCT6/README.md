@@ -29,12 +29,12 @@ A video tutorial on how to build and run these examples on Raspberry Pi computer
  * A board with the STM32F103 high-density device. There are demonstration on [Port103R](https://www.google.com/search?q=port103r) board.
  * 4 wires to connect Pi with MCU
  * An oscilloscope to display analog signals. It is optional.
- * A specify [***image***](https://drive.google.com/file/d/1tcWPh0wf8M2cwCmVetzn6QVRU6tq7cFk/view?usp=sharing) of Raspberry containing these examples,  prebuild OpenOCD utility and REMCU library  
+ * A specify [***image***](https://remotemcu.com//images/2020-05-27-raspberry-remcu.zip) of Raspberry containing these examples,  prebuild OpenOCD utility and REMCU library  
   or install/download these components to your Raspbian filesystem manually. [Instructions](#manual-configuration-installation-all-necessary-components)
 
 ### Prepare
 #### Using the image
-Download the [***image***](https://drive.google.com/file/d/1tcWPh0wf8M2cwCmVetzn6QVRU6tq7cFk/view?usp=sharing) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
+Download the [***image***](https://remotemcu.com//images/2020-05-27-raspberry-remcu.zip) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
 [![flash image](https://img.youtube.com/vi/CCRVo5sI1E0/0.jpg)](https://www.youtube.com/watch?v=CCRVo5sI1E0)  
 Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a ***static IP address 192.168.0.10***. The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
 This image has a community version of the REMCU lib which works through debug interface and requires an OpenOCD utility. Connect this Raspberry GPIO pins to debug port of the MCU using scheme below.  

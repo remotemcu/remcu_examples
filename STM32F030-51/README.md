@@ -29,11 +29,11 @@ A video tutorial on how to build and run the [similar examples](../STM32F103RCT6
  * A [Raspberry Pi v1](https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/) board
  * A board with the STM32F030 or stm32F051 device. There are demonstration on [STM32F030 DEMO BOARD V1.1](https://stm32-base.org/boards/STM32F030F4P6-STM32F030-DEMO-BOARD-V1.1.html) and [LC Technology STM32F051C8T6](https://stm32-base.org/boards/STM32F051C8T6-LC-Technology)
  * 4 wires to connect Pi with MCU
- * A specify [***image***](https://drive.google.com/file/d/1ENxD3C24uYwEIWcnSwN8rQULNaNKf-ww/view?usp=sharing) of Raspberry containing these examples, prebuild OpenOCD utility and REMCU library  
+ * A specify [***image***](https://remotemcu.com//images/2020-05-27-raspberry-remcu.zip) of Raspberry containing these examples, prebuild OpenOCD utility and REMCU library  
   or install/download these components to your Raspbian filesystem manually. [Instructions](#manual-configuration-installation-all-necessary-components)
 
 ### Prepare
-Download the [***image***](https://drive.google.com/file/d/1ENxD3C24uYwEIWcnSwN8rQULNaNKf-ww/view?usp=sharing) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
+Download the [***image***](https://remotemcu.com//images/2020-05-27-raspberry-remcu.zip) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
 [![flash image](https://img.youtube.com/vi/CCRVo5sI1E0/0.jpg)](https://www.youtube.com/watch?v=CCRVo5sI1E0)  
 Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a ***static IP address 192.168.0.10***. The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
 This image has a community version of the REMCU lib which works through debug interface and requires an OpenOCD utility. Connect this Raspberry GPIO pins to debug port of the MCU using scheme below.  
