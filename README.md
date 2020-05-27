@@ -13,7 +13,7 @@ Examples illustrating application development on the [**REMCU Lib**](https://rem
 | stm32f3_discovery 	| soon 	|  	| soon : Compas & Accelerometer 	|  	|  	|
 | KIT_XMC_2GO_XMC1100 	| soon 	| soon 	|  	|  	|  	|
 | LPC1768(NXP) 	| soon 	|  	| soon: CAN bus sniffer 	|  	|  	|
-| FRDM-K64F(Freescale/NXP) 	| soon 	|  	| soon: Accelerometer 	|  	|  	|
+| FRDM-K64F<br>MK64FN1M0VLL12 MCU<br>(Freescale/NXP) 	| soon 	|  	| soon: Accelerometer 	|  	|  	|
 | EFM32TG(Silabs) 	| soon 	|  	| soon: LCD printer 	|  	|  	|
 | SAMD20(Microchip) 	| soon 	|  	|  	|  	|  	|
 
