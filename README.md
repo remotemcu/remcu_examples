@@ -7,7 +7,7 @@ Examples illustrating application development on the [**REMCU Lib**](https://rem
 | stm32f4_discovery 	| C++(cling) & Python:<br>*ADC, DAC, DMA, GPIO, PWM* 	|  	| Accelerometer & CAN bus sniffer 	|  	|  	|
 | STM32F767X 	| C++(cling): *ADC, DAC, DMA, GPIO, PWM* 	|  	|  	|  	|  	|
 | STM32F103RCT6 	| C++(cling) & Python: *ADC, GPIO, PWM* 	| *ADC, GPIO* 	|  	| *ADC, DAC, DMA, GPIO, CAN bus* 	| C/C++ apps & Python scripts: *ADC, GPIO, CAN bus*<br> - the prepared Raspbian image is available 	|
-| STM32F103C8T6<br>Blue Pill board 	| soon 	| soon 	|  	| soon 	| soon - the prepared Raspbian image will be available 	|
+| STM32F103C8T6<br>Blue Pill board 	| C++(cling) & Python: *ADC, GPIO* 	| *ADC, GPIO* 	|  	| ADC, CAN Bus 	| <br>C/C++ apps & Python scripts: *ADC, GPIO, CAN bus*<br> - the prepared Raspbian image will be available 	|
 | stm8l_discovery 	| C++(cling): *ADC, DAC, DMA, GPIO, LCD screen* 	|  	|  	|  	|  	|
 | STM32F030-51 	| C++(cling) & Python: *ADC, GPIO* 	|  	|  	|  	| Python scripts: *ADC, GPIO*<br> - the prepared Raspbian image is available 	|
 | stm32f3_discovery 	| soon 	|  	| soon : Compas & Accelerometer 	|  	|  	|
