@@ -12,7 +12,7 @@ It is a GUI app which grabs acceleration data from on-board(STM32F4Discovery) ME
   <summary>demo
 <b>(click here)</b></summary>
 
-![](accell_graph/img/monitor_of_acc.gif)
+![](accell_graph/img/mems_demo.gif)
 </details>
 
 ## CAN_BUS
@@ -21,7 +21,7 @@ It is a GUI app of [CAN Bus](https://en.wikipedia.org/wiki/CAN_bus) sniffer base
   <summary>demo
 <b>(click here)</b></summary>
 
-![](CAN_BUS/img/CAN_demo.gif)
+![](CAN_BUS/img/can_bus_demo.gif)
 </details>
 
 ## jupyter-notebook
@@ -30,9 +30,7 @@ There are scripts for [Jupyter Notebook](https://jupyter.org/) IDE. The Python s
   <summary>demo
 <b>(click here)</b></summary>
 
-![slider_f4d](jupyter-notebook/img/slider_f4d.gif)  
-
-![f4_adc](jupyter-notebook/img/f4_adc.gif)
+![slider_f4d](jupyter-notebook/img/py_demo.gif)  
 </details>
 
 ## STM32F4-Discovery_FW_V1.1.0

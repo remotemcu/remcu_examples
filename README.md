@@ -17,23 +17,28 @@ Examples illustrating application development on the [**REMCU Lib**](https://rem
 | EFM32TG(Silabs) 	| soon 	|  	| soon: LCD printer 	|  	|  	|
 | SAMD20(Microchip) 	| soon 	|  	|  	|  	|  	|
 
+### Demo video
+
 <details>
-	<summary> Short demo
-		<b>(click here to view) </b></summary>
+	<summary> <b>(click here to view) </b></summary>
 
 stm32f4_discovery/accell_graph demo:  
-![monitor_of_acc](stm32f4_discovery/accell_graph/img/monitor_of_acc.gif)  
+![monitor_of_acc](stm32f4_discovery/accell_graph/img/mems_demo.gif)  
 
 stm32f4_discovery/CAN_BUS demo:  
-![monitor_of_acc](stm32f4_discovery/CAN_BUS/img/CAN_demo.gif)
+![monitor_of_acc](stm32f4_discovery/CAN_BUS/img/can_bus_demo.gif)
 
-stm32f4_discovery/jupyter-notebook PWM demo:  
-![slider_f4d](stm32f4_discovery/jupyter-notebook/img/slider_f4d.gif)  
+stm32f4_discovery/jupyter-notebook Python notebook demo:  
+![slider_f4d](stm32f4_discovery/jupyter-notebook/img/py_demo.gif)  
 
-stm32f4_discovery/jupyter-notebook ADC demo:  
-![f4_adc](stm32f4_discovery/jupyter-notebook/img/f4_adc.gif)
+STM32F767X/jupyter-notebook ADC, DAC, PWM demo:  
+![STM32F767X](STM32F767X/img/demo.gif)
+
+STM32F103C8T6-Blue-Pill/Raspberry + Blue Pill CAN bus demo:   
+![raspberry can bus](STM32F103C8T6-Blue-Pill/img/CAN_demo.gif)
 </details>
 
+## REMCU Lib
 The [**REMCU Lib**](https://remotemcu.com/) is a cross-platform library designed for remote access to internal peripherals of various MCU and SoC as if these peripherals were a part of your computer.
 The library gives access a user space program to all peripherals of the remote chip  through the same API as peripheral drivers from Software Development Kit (SDK) provided by semiconductor chip vendors or third parties for MCU firmware development.
 Thereby a developer doesn’t need to learn new tools but can just reuse his firmware code and examples of the SDK in his code designed for personal or embedded computers.

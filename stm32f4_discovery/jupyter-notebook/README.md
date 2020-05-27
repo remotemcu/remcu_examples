@@ -67,9 +67,7 @@ Run Jupyter Notebook and open the stm32f4_discovery_python.ipynb file in it. The
   <summary> Py script show
 <b>(click here) </b></summary>
 
-![slider_f4d](img/slider_f4d.gif)  
-
-![f4_adc](img/f4_adc.gif)
+![slider_f4d](img/py_demo.gif)
 </details>
 
 For the operation convenience, we prepared a particular Python wrapper(STM32F4XX_StdPeriph_Lib.py in remcu_include folder) containing all necessary constants and structures which makes it possible to use the Standard Peripheral Library function just like with C and C++ code.  
