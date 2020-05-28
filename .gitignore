@@ -5,5 +5,8 @@ __pycache__/
 *.so
 *.lib
 *.dll
+*.exp
+*.user
+*-pre1
 build-*/
 REMCU_LICENSE.txt
