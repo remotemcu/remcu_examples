@@ -49,7 +49,7 @@ float fNormAcc,fSinRoll,fCosRoll,fSinPitch,fCosPitch = 0.0f, RollAng = 0.0f, Pit
 float fTiltedX,fTiltedY = 0.0f;
 #define PI                         (float)     3.14159265f
 
-
+// This calculation was taken from STM32F3-Discovery_FW_V1.1.0/Project/Demonstration/main.c:243
 float compasAngle(){
     for(int i=0;i<3;i++)
         AccBuffer[i] /= 100.0f;
