@@ -79,7 +79,7 @@ Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
 
     m_axisX->setTickCount(maxTickCount);
     m_axisX->setRange(0, maxTickCount);
-    m_axisY->setRange(-2500, 2500);
+    m_axisY->setRange(-700, 700);
 
     this->legend()->setVisible(true);
     this->legend()->setAlignment(Qt::AlignBottom);

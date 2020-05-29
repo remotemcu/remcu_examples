@@ -1,9 +1,7 @@
 # Plotter of Acceleration
 
 ## Overview
-There are two examples:  
-The **accell_graph** that grabs acceleration data from on-board([STM32F3Discovery](https://www.st.com/resource/en/user_manual/dm00063382-discovery-kit-with-stm32f303vc-mcu-stmicroelectronics.pdf)) *MEMS LSM303DLHC* sensor and plot graph of it vs. time in real time.
-The compasss that shows compass bearing on the screen with help *MEMS LSM303DLHC* sensor.
+The **accell_graph** app grabs acceleration data from on-board([STM32F3Discovery](https://www.st.com/resource/en/user_manual/dm00063382-discovery-kit-with-stm32f303vc-mcu-stmicroelectronics.pdf)) *MEMS LSM303DLHC* sensor and plot graph of it vs. time in real time.
 We didn’t load any specific firmware into the microcontroller. Our program just works directly with the I2C peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.com/). In this way, our application can interact with the accelerometer integrated into the discovery board.
 
 ![i2c](img/monitor_of_acc.gif)
@@ -39,7 +37,7 @@ Operation system - **your OS**
 <details>
   <summary>download show<b>(click here) </b></summary>
   
-![download show](../img/downloadF4_win.gif)
+![download show](../img/download.png)
 </details>
 fExtract the library to examples the folder (accel_graph folder). Open the **accell_graph** project with help Qt Creator and build it. Run compiled app.
 <details>
@@ -88,6 +86,7 @@ Type this port number to text field of the app:
   
 ![Image](https://preview.redd.it/2rylc1wfn6r01.jpg?width=640&crop=smart&auto=webp&s=306979886db7bd5f75d7e25caf206495124ae581)
 </details>
+
 To run the Jlink utility, you use [Segger guide](https://www.segger.com/downloads/jlink/UM08001)
 <details>
   <summary> Jlink window <b>(click here)</b></summary>
