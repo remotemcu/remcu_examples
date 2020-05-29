@@ -10,7 +10,7 @@ Examples illustrating application development on the [**REMCU Lib**](https://rem
 | STM32F103C8T6<br>Blue Pill board 	| C++(cling) & Python: *ADC, GPIO* 	| *ADC, GPIO* 	|  	| ADC, CAN Bus 	| <br>C/C++ apps & Python scripts: *ADC, GPIO, CAN bus*<br> - the prepared Raspbian image will be available 	|
 | stm8l_discovery 	| C++(cling): *ADC, DAC, DMA, GPIO, LCD screen* 	|  	|  	|  	|  	|
 | STM32F030-51 	| C++(cling) & Python: *ADC, GPIO* 	|  	|  	|  	| Python scripts: *ADC, GPIO*<br> - the prepared Raspbian image is available 	|
-| stm32f3_discovery 	| soon 	|  	| soon : Compas & Accelerometer 	|  	|  	|
+| stm32f3_discovery 	| soon 	|  	| Compas & Gyroscope 	|  	|  	|
 | KIT_XMC_2GO_XMC1100 	| soon 	| soon 	|  	|  	|  	|
 | LPC1768(NXP) 	| soon 	|  	| soon: CAN bus sniffer 	|  	|  	|
 | FRDM-K64F<br>MK64FN1M0VLL12 MCU<br>(Freescale/NXP) 	| soon 	|  	| soon: Accelerometer 	|  	|  	|
