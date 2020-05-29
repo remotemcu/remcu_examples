@@ -48,6 +48,8 @@ Let's have a look at the video below and see what opportunities and applications
 
 [![REMCU DESCRIPTION](img/preview_description.png)](https://youtu.be/PJPl9Y96hA0)
 
+REMCU Lib Docs: https://remotemcu.com/docs
+
 Full details of the examples can be found in README.md file of the corresponding folders.
 
 ## Support policy
