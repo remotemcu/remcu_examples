@@ -1,11 +1,13 @@
 # Compass example
 
+![title](img/title.png)
+
 ## Overview
 
 The **compass** app grabs digital magnetic data from on-board([STM32F3Discovery](https://www.st.com/resource/en/user_manual/dm00063382-discovery-kit-with-stm32f303vc-mcu-stmicroelectronics.pdf)) *MEMS LSM303DLHC* E-compass sensor and shows pointer/needle showing the direction of magnetic north in real time.
 We didn’t load any specific firmware into the microcontroller. Our program just works directly with the I2C peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.com/). In this way, our application can interact with the accelerometer integrated into the discovery board.
 
-![compas stm32f3discovery](img/compass_demo.gif)
+![compas stm32f3discovery](img/compas_demo.gif)
 
 It is just like communicating with the sensor with the help of a USB-I2C convertor. In this case, the STM32F303 chip is the USB-I2C converter. But unlike a highly specialized converter, a microcontroller has great potential and rich number of peripherals.
 
@@ -97,7 +99,7 @@ To run the Jlink utility, you use [Segger guide](https://www.segger.com/download
 ####  Running the cmpass app
 Just run application. It will automatically connect to debug server with IP 127.0.0.1 and port 6666. If you have a non-default openocd configuration or other server change code in [main.c](mian.c) file to connect to the server.
 ```Cpp
-	//If you have non-default openocd configuration or other server you type the port number and IP that be used the server to arguments below
+    //If you have non-default openocd configuration or other server you type the port number and IP that be used the server to arguments below
     const bool connect_ok = remcu_connect2OpenOCD("127.0.0.1", 6666, 1);
     //uncomment row below if use OpenOCD GDB server
     //connect_ok = remcu_connect2GDB("127.0.0.1", 3333, 1);
@@ -106,5 +108,5 @@ Just run application. It will automatically connect to debug server with IP 127.
 <details>
   <summary>Demonstration <b>(click here) </b></summary>
   
-![compas stm32f3discovery](img/compas.gif)
+![compas stm32f3discovery](img/compas_demo.gif)
 </details>

@@ -1,19 +1,21 @@
-# Plotter of Acceleration
+# Plotter of Gyroscope
+
+![title](img/title.png)
 
 ## Overview
-The **accell_graph** app grabs acceleration data from on-board([STM32F3Discovery](https://www.st.com/resource/en/user_manual/dm00063382-discovery-kit-with-stm32f303vc-mcu-stmicroelectronics.pdf)) *MEMS LSM303DLHC* sensor and plot graph of it vs. time in real time.
-We didn’t load any specific firmware into the microcontroller. Our program just works directly with the I2C peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.com/). In this way, our application can interact with the accelerometer integrated into the discovery board.
+The **gyrol_graph** app grabs gyroscope data from on-board([STM32F3Discovery](https://www.st.com/resource/en/user_manual/dm00063382-discovery-kit-with-stm32f303vc-mcu-stmicroelectronics.pdf)) MEMS *L3GD20* 3-axis digital output sensor and plot graph of it vs. time in real time.
+We didn’t load any specific firmware into the microcontroller. Our program just works directly with the SPI peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.com/). In this way, our application can interact with the accelerometer integrated into the discovery board.
 
-![i2c](img/monitor_of_acc.gif)
+![compass](img/gyro_demo.gif)
 
-It is just like communicating with the sensor with the help of a USB-I2C convertor. In this case, the STM32F303 chip is the USB-I2C converter. But unlike a highly specialized converter, a microcontroller has great potential and rich number of peripherals.
+It is just like communicating with the sensor with the help of a USB-SPI convertor. In this case, the STM32F303 chip is the USB-SPI converter. But unlike a highly specialized converter, a microcontroller has great potential and rich number of peripherals.
 
 ![variants](img/variants.png)
 
 To interact with a microcontroller hardware from our PC we use the driver functions of [STM32F3-Discovery_FW_V1.1.0](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) of STMicroelectronics company. It is a vendor software development kit provided by STMicroelectronics company for a firmware development of STM32 MCU.
 Our application calls these driver functions, just like calls them for hardware operations from firmware code.
 
-The code controlling I2C peripheral module have been taken from **MEMS**([main.c](STM32F3-Discovery_FW_V1.1.0/Project/Demonstration/main.c)) example of [Standard Peripheral Library(SPL) for STM32F3Discovery](https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32-standard-peripheral-library-expansion/stsw-stm32118.html). You can see description of SPL examples at [UM1565](https://www.st.com/resource/en/user_manual/dm00062956-description-of-stm32f37xx38xx-standard-peripheral-library-stmicroelectronics.pdf) doc.
+The code controlling SPI peripheral module have been taken from **MEMS**([main.c](STM32F3-Discovery_FW_V1.1.0/Project/Demonstration/main.c)) example of [Standard Peripheral Library(SPL) for STM32F3Discovery](https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32-standard-peripheral-library-expansion/stsw-stm32118.html). You can see description of SPL examples at [UM1565](https://www.st.com/resource/en/user_manual/dm00062956-description-of-stm32f37xx38xx-standard-peripheral-library-stmicroelectronics.pdf) doc.
 
 ## Installation and Use
 ### Project prerequirements
@@ -39,7 +41,7 @@ Operation system - **your OS**
   
 ![download show](../img/download.png)
 </details>
-fExtract the library to examples the folder (accel_graph folder). Open the **accell_graph** project with help Qt Creator and build it. Run compiled app.
+fExtract the library to examples the folder (accel_graph folder). Open the **gyrol_graph** project with help Qt Creator and build it. Run compiled app.
 <details>
   <summary>show <b>(click here)</b></summary>
   
@@ -94,7 +96,7 @@ To run the Jlink utility, you use [Segger guide](https://www.segger.com/download
 ![Image](https://www.segger.com/fileadmin/images/products/J-Link/Software/GDB_Server-Overview.gif)
 </details>
 
-####  Running the accell_graph app
+####  Running the gyrol_graph app
 Just run application. If you have non-default openocd configuration or other server you type the port number and IP that be used the server to the text fields of the app 
 <details>
   <summary> Jlink port <b>(click here)</b></summary>
@@ -106,5 +108,5 @@ Press ***Connect*** Button. The app plots graph of accel. You can rotate the Dis
 <details>
   <summary>Demonstration <b>(click here) </b></summary>
   
-![i2c](img/monitor_of_acc.gif)
+![SPI](img/gyro_demo.gif)
 </details>
