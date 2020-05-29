@@ -1,15 +1,12 @@
-# Plotter of Acceleration
-
 ## Overview
 There are two examples:  
 1. The **gyrol_graph** app grabs gyroscope data from on-board([STM32F3Discovery](https://www.st.com/resource/en/user_manual/dm00063382-discovery-kit-with-stm32f303vc-mcu-stmicroelectronics.pdf)) MEMS *L3GD20* 3-axis digital output sensor and plot graph of it vs. time in real time.
 
 ![gyroscope](gyrol_graph/img/gyro_demo.gif)
 
-</details>
-fExtract the library to examples the folder (accel_graph folder). Open the **accell_graph** project with help Qt Creator and build it. Run compiled app.
 <details>
   <summary>functional block diagram <b>(click here to see)</b></summary>
+  
 ![title](gyrol_graph/img/title.png)
 </details>
 
@@ -18,9 +15,8 @@ fExtract the library to examples the folder (accel_graph folder). Open the **acc
 
 ![compass](compass/img/compas_demo.gif)
 
-</details>
-fExtract the library to examples the folder (accel_graph folder). Open the **accell_graph** project with help Qt Creator and build it. Run compiled app.
 <details>
   <summary>functional block diagram <b>(click here to see )</b></summary>
+  
 ![title](compass/img/title.png)
 </details>
