@@ -97,7 +97,7 @@ To run the Jlink utility, you use [Segger guide](https://www.segger.com/download
 </details>
 
 ####  Running the cmpass app
-Just run application. It will automatically connect to debug server with IP 127.0.0.1 and port 6666. If you have a non-default openocd configuration or other server change code in [main.cpp](main.cpp) file to connect to the server.
+Just run application. It will automatically connect to debug server with IP 127.0.0.1 and port 6666. If you have a non-default openocd configuration or other server change code in [main.cpp](main.cpp#L69) file to connect to the server.
 ```Cpp
     //If you have non-default openocd configuration or other server you type the port number and IP that be used the server to arguments below
     const bool connect_ok = remcu_connect2OpenOCD("127.0.0.1", 6666, 1);
