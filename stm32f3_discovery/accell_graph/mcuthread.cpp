@@ -6,8 +6,6 @@
 
 #include "utils.h"
 
-#define ABS(x)         (x < 0) ? (-x) : x
-
 McuThread::McuThread(){}
 
 void McuThread::run()
@@ -28,24 +26,21 @@ void McuThread::run()
     /* Demo Gyroscope */
     Demo_GyroConfig();
 
-    float AccBuffer[3] = {0.0f};
-
-    /* Demo Compass */
-    Demo_CompassConfig();
+    float GypoBuffer[3] = {0.0f};
 
     while(1){
-        /* Read Compass data */
-        Demo_CompassReadAcc(AccBuffer);
+        /* Read Gyro Angular data */
+        Demo_GyroReadAngRate(GypoBuffer);
 
-        data.accX = AccBuffer[0];
-        data.accY = AccBuffer[1];
-        data.accZ = AccBuffer[2];
+        data.accX = GypoBuffer[0];
+        data.accY = GypoBuffer[1];
+        data.accZ = GypoBuffer[2];
         emit dataChanged(data);
 
         qDebug() << "err: " << remcu_getErrorCount() <<
-            " | AccX " << data.accX <<
-            " | AccY " << data.accY <<
-            " | AccZ " << data.accZ;
+            " | GyroX " << data.accX <<
+            " | GyroY " << data.accY <<
+            " | GyroZ " << data.accZ;
 
         if(remcu_getErrorCount() != 0){
             qWarning() << "Error connect to server or hardware problem";

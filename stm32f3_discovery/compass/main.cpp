@@ -51,6 +51,8 @@
 #include <QApplication>
 #include <QtDebug>
 
+#include <QtWidgets>
+
 #include "mcuthread.h"
 #include "analogcompas.h"
 #include "remcu.h"
@@ -64,10 +66,10 @@ int main(int argc, char *argv[])
         freopen("CONOUT$", "w", stderr);
     }
 #endif
-
-    const bool connect_ok = remcu_connect2OpenOCD("localhost", 6666, 1);
+	//If you have non-default openocd configuration or other server you type the port number and IP that be used the server to arguments below
+    const bool connect_ok = remcu_connect2OpenOCD("127.0.0.1", 6666, 1);
     //uncomment row below if use OpenOCD GDB server
-    //connect_ok = remcu_connect2GDB("localhost", 3333, 1);
+    //connect_ok = remcu_connect2GDB("127.0.0.1", 3333, 1);
 
     if(connect_ok == false){
         qWarning() << "Debug Server not found - Can't run thread";
