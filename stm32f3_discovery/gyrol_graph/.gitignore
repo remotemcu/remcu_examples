@@ -1,0 +1,13 @@
+
+*.ll
+build-*
+*.user
+*.dll
+*.lib
+remcu_include
+Makefile*
+REMCU_LICENSE.txt
+debug/
+ui_mainwindow.h
+ui_sendframebox.h
+.qmake*
