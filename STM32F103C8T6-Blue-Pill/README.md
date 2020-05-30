@@ -125,7 +125,7 @@ $tar -xf remcu-*.tar
 
 ### C++ programs
 
-A small application ADC_line receives the ADC data and builds a horizontal bar chart  based on this value. Plug a variable resistor into the PA4 pin and run the application.  
+A small application ***ADC_line*** receives the ADC data and builds a horizontal bar chart  based on this value. Plug a variable resistor into the PA4 pin and run the application.  
 <details>
   <summary> show 
 <b>(click here) </b></summary>
@@ -142,7 +142,7 @@ Rotate the shaft and you will get the voltage versus time chart.
 ![adc_line](img/rasp_adc.gif)  
 </details>
 
-There are two examples to work with CAN bus, *CAN_send* and *CAN_receiver*. These examples work on 125 kBps. For other baud rates and this clock configuration(see system_stm32f10x.c), the CAN Initialization code (Prescaler value) should be amended accordingly:  
+There are two examples to work with CAN bus, ***CAN_send*** and ***CAN_receiver*** programs. These examples work on 125 kBps. For other baud rates and this clock configuration(see system_stm32f10x.c), the CAN Initialization code (Prescaler value) should be amended accordingly:  
 ```cpp
   //CAN_InitStructure.CAN_Prescaler = 4*16; //Prescaler for 62.5 kBps
   CAN_InitStructure.CAN_Prescaler = 4*8; //Prescaler for 125 kBps
@@ -160,14 +160,14 @@ show(<b>click here</b>) </summary>
 
 </details>
 
-The *CAN_receiver* is a simple app that captures all CAN bus messages on the bus. Just run *CAN_receiver* app and look at the results:  
+The ***CAN_receiver*** is a simple app that captures all CAN bus messages on the bus. Just run *CAN_receiver* app and look at the results:  
 <details><summary>
 show(<b>click here</b>) </summary>
 
 ![](img/can_demo_receiver.gif)
 </details>
 
-The *CAN_send* is a simple app that send one message obtained through the program arguments. Example of using:  
+The ***CAN_send*** is a simple app that send one message obtained through the program arguments. Example of using:  
 <details><summary>
 show(<b>click here</b>) </summary>
 
@@ -206,7 +206,7 @@ python gpio.py
   * **ADC_line.py** script builds a horizontal bar chart of the ADC value versus time like the *C* ADC_line application.
 <details>
   <summary>
-	<b>show(click here) </b></summary>
+	show <b>(click here) </b></summary>
 
 ![adc_line](img/rasp_adc.gif)  
 </details>
@@ -276,7 +276,7 @@ Install [**Anaconda Distribution**](https://www.anaconda.com/distribution/). Run
 ![](../stm32f4_discovery/jupyter-notebook/img/xwidgets.png)
 ![](../stm32f4_discovery/jupyter-notebook/img/xplot.png)
 </details>
-Run Jupyter Notebook and open the *Cpp_Examples.ipynb* file in it. The script contains detailed comments for work. You just do step by step code of the script and observe the results.  
+Run Jupyter Notebook and open the "Cpp_Examples.ipynb" file in it. The script contains detailed comments for work. You just do step by step code of the script and observe the results.  
 <details>
   <summary>
 	ADC graph<b>(click here)</b></summary>
@@ -324,7 +324,8 @@ openocd.exe -f interface/stlink-v2.cfg -f target/stm32f1x.cfg
 ![stlink_windows](img/openocd.png)
 
 Install the [Anaconda Distribution](https://www.anaconda.com/distribution/) and [ipywidgets](https://ipywidgets.readthedocs.io/en/stable/user_install.html) package. ***We encourage you use Python 2 version***. We can not guarantee the work of the script with Python 3.  
-Run Jupyter Notebook and open the Python_Examples.ipynb file in it.  
+
+Run Jupyter Notebook and open the ***Python_Examples.ipynb*** file in it.  
 The script contains detailed comments for work. You just do step by step code of the script and observe the results.  
 ![run py script](img/f103_adc.gif)
 
