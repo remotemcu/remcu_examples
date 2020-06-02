@@ -42,6 +42,7 @@ This image has a community version of the REMCU lib which works through debug in
 <b>(click here) </b></summary>
 
 ![scheme](img/scheme.png)
+![scheme](img/scheme_2_3_4.png)
 </details>
 
 

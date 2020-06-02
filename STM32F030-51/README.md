@@ -38,13 +38,20 @@ Download the [***image***](https://remotemcu.com//images/2020-05-27-raspberry-re
 Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a ***static IP address 192.168.0.10***. The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
 This image has a community version of the REMCU lib which works through debug interface and requires an OpenOCD utility. Connect this Raspberry GPIO pins to debug port of the MCU using scheme below.  
 <details>
-  <summary>scheme
+  <summary>scheme for Raspberry Pi 1
 <b>(click here) </b></summary>
 
 ![scheme](img/scheme-51.png)
 ![scheme](img/scheme-30.png)
 </details>
 
+<details>
+  <summary>scheme for Raspberry Pi 2/3/4
+<b>(click here) </b></summary>
+
+![scheme](img/scheme-51_2_3_4.png)
+![scheme](img/scheme-30_2_3_4.png)
+</details>
 
 Run the “openocd_stm32f0x.sh” scripts:  
 <details>
