@@ -25,17 +25,22 @@ A video tutorial on how to build and run the [similar examples](../STM32F103RCT6
 [![Raspberry](img/preview.png)](https://youtu.be/JdBabbC5Prk)
 
 ### Prerequirements
- * A [Raspberry Pi v1](https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/) board
+ * A Raspberry Pi 1/2/3/4 board
  * A [Blue Pill board](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html) with original(noncounterfeit/no clones) STM32F103C8T6 MCU
  * 4 wires to connect Pi with MCU
- * A specify [***image***](https://remotemcu.com//images/2020-05-27-raspberry-remcu.zip) of Raspberry containing these examples, prebuild OpenOCD utility and REMCU library.  
+ * A specify [***image***](https://remotemcu.com//images/2020-06-03-raspberry-remcu.zip) of Raspberry containing these examples, prebuild OpenOCD utility and REMCU library.  
  or install/download these components to your Raspbian filesystem manually. [Instructions](#manual-configuration-installation-all-necessary-components)
 
 ### Prepare
 #### Using the image
-Download the [***image***](https://remotemcu.com//images/2020-05-27-raspberry-remcu.zip) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
+Download the [***image***](https://remotemcu.com//images/2020-06-03-raspberry-remcu.zip) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
 [![flash image](https://img.youtube.com/vi/CCRVo5sI1E0/0.jpg)](https://www.youtube.com/watch?v=CCRVo5sI1E0)  
-Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a ***static IP address 192.168.0.10***. The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
+Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a zeroconf mDNS server(Avahi), you can connect Raspbery Pi using ***remcu.local*** name
+```bash
+ssh pi@remcu.local
+```
+If you plug Raspberry Pi into laptop/PC directly without a DHCP service, the Rpi will has a ***static IP address 192.168.0.10*** (255.255.255.0 mask and 192.168.0.1 gateway).  
+The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
 This image has a community version of the REMCU lib which works through debug interface and requires an OpenOCD utility. Connect this Raspberry GPIO pins to debug port of the MCU using scheme below.  
 <details>
   <summary>scheme
@@ -63,7 +68,7 @@ Navigate to ‘STM32F103C8T6-Blue-Pill’ directory and run ‘make’ command. 
 ![make](img/make.png)
 </details>
 
-#### Manual configuration. Installation all necessary components
+#### Manual configuration. Installation all necessary components. For 32-bit Raspbian System
 That requires next:  
 1. Downlaod prebuild OpenOCD from [here](https://github.com/remotemcu/Raspbian_packages) to your Raspbian RootFS. The build have been tested on Raspberry Pi and we recommend it.
 
@@ -71,7 +76,7 @@ That requires next:
 git clone https://github.com/remotemcu/Raspbian_packages.git
 ```
 
-Connect this Raspberry GPIO pins to debug port of the MCU using [scheme above](img/scheme.png) and run OpenOCD utility
+Connect this Raspberry's GPIO pins to debug port of the MCU using scheme above [1](img/scheme.png), [2/3/4](img/scheme_2_3_4.png) and run the OpenOCD script:
 
 ```bash
 cd Raspbian_packages/
@@ -86,9 +91,20 @@ sudo apt-get install openocd
 
 In this case, run OpenOCD utility this way:  
 
+
+* For Raspberry 1, use [this scheme](img/scheme_2_3_4.png) (SWDIO -> GPIO25 and SWCLK -> GPIO11) and run OpenOCD with the arguments below:
 ```bash
 sudo openocd -f interface/raspberrypi-native.cfg -c "transport select swd" -f target/stm32f1x.cfg
 ```
+* For Raspberry 2 or 3:
+```bash
+sudo openocd -f interface/raspberrypi2-native.cfg -c "transport select swd" -f target/stm32f1x.cfg
+```
+* For Raspberry 4, please use sysfsgpio interface:
+```bash
+sudo openocd -f interface/sysfsgpio-raspberrypi.cfg -c "transport select swd" -f target/stm32f1x.cfg
+```
+or try to use our [prebuilt OpenOCD package](https://github.com/remotemcu/Raspbian_packages) with the **openocd.sh** script
 
 >More information about Rpi connection with MCU using OpenOCD can be found here:
 https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspberry-pi
@@ -126,7 +142,7 @@ $tar -xf remcu-*.tar
 
 ### C++ programs
 
-A small application ***ADC_line*** receives the ADC data and builds a horizontal bar chart  based on this value. Plug a variable resistor into the PA4 pin and run the application.  
+1. A small application ***ADC_line*** receives the ADC data and builds a horizontal bar chart  based on this value. Plug a variable resistor into the PA4 pin and run the application.  
 <details>
   <summary> show 
 <b>(click here) </b></summary>
@@ -143,7 +159,7 @@ Rotate the shaft and you will get the voltage versus time chart.
 ![adc_line](img/rasp_adc.gif)  
 </details>
 
-There are two examples to work with CAN bus, ***CAN_send*** and ***CAN_receiver*** programs. These examples work on 125 kBps. For other baud rates and this clock configuration(see system_stm32f10x.c), the CAN Initialization code (Prescaler value) should be amended accordingly:  
+2. There are two examples to work with CAN bus, ***CAN_send*** and ***CAN_receiver*** programs. These examples work on 125 kBps. For other baud rates and this clock configuration(see system_stm32f10x.c), the CAN Initialization code (Prescaler value) should be amended accordingly:  
 ```cpp
   //CAN_InitStructure.CAN_Prescaler = 4*16; //Prescaler for 62.5 kBps
   CAN_InitStructure.CAN_Prescaler = 4*8; //Prescaler for 125 kBps
@@ -161,14 +177,14 @@ show(<b>click here</b>) </summary>
 
 </details>
 
-The ***CAN_receiver*** is a simple app that captures all CAN bus messages on the bus. Just run *CAN_receiver* app and look at the results:  
+* The ***CAN_receiver*** is a simple app that captures all CAN bus messages on the bus. Just run *CAN_receiver* app and look at the results:  
 <details><summary>
 show(<b>click here</b>) </summary>
 
 ![](img/can_demo_receiver.gif)
 </details>
 
-The ***CAN_send*** is a simple app that send one message obtained through the program arguments. Example of using:  
+* The ***CAN_send*** is a simple app that send one message obtained through the program arguments. Example of using:  
 <details><summary>
 show(<b>click here</b>) </summary>
 
