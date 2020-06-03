@@ -18,7 +18,7 @@ There is also possible to use the REMCU with high level languages like Python, J
   * PC with MacOS or Linux(Ubuntu recommended)
   * An oscilloscope to watch DAC signal. It is optional.
   * [Anaconda Distribution](https://www.anaconda.com/distribution/), ***we recommend Python 2 version***
-  * A debug server. It can be an OpenOCD([prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422))
+  * A debug server. It can be an OpenOCD(**We recommend this [prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)**)
 
 ## Prepare
 

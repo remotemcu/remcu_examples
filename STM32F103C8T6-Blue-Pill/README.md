@@ -246,7 +246,7 @@ The ReMCU library can be ported to any version of the Raspberry Pi board and als
 ### Prerequirements
  * A [Blue Pill board](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html) with original(noncounterfeit/no clones) STM32F103C8T6 MCU
  * A debugger like st-link or jlink
- * Debug server. It can be an OpenOCD([prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)) or st-link GDB server from [Atollic TrueStudio](https://atollic.com/truestudio/) or [Jlink GDB server](https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/) (if you use jlink instead of st-link)
+ * Debug server. It can be an OpenOCD(**We recommend this [prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)**) or st-link GDB server from [Atollic TrueStudio](https://atollic.com/truestudio/) or [Jlink GDB server](https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/) (if you use jlink instead of st-link)
  * [Anaconda Distribution](https://www.anaconda.com/distribution/), ***we recommend Python 2 version***
 
 ### Prepare
@@ -322,7 +322,7 @@ But there is possible to use the REMCU with high level languages like Python, Ja
 ### Prerequirements
  * A [Blue Pill board](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html) with original(noncounterfeit/no clones) STM32F103C8T6 MCU
  * A debugger like st-link or jlink
- * Debug server. It can be an OpenOCD([prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)) or st-link GDB server from [Atollic TrueStudio](https://atollic.com/truestudio/) or [Jlink GDB server](https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/) (if you use jlink instead of st-link)
+ * Debug server. It can be an OpenOCD(**We recommend this [prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)**) or st-link GDB server from [Atollic TrueStudio](https://atollic.com/truestudio/) or [Jlink GDB server](https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/) (if you use jlink instead of st-link)
  * [Anaconda Distribution](https://www.anaconda.com/distribution/), ***we recommend Python 2 version***
 
 ### Prepare

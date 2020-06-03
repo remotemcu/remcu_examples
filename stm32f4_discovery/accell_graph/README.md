@@ -26,7 +26,7 @@ To run the example next software is required:
   * [Qt Creator](https://www.qt.io/download-open-source)
   * [Qt Charts](https://doc.qt.io/qt-5/qtcharts-overview.html) component
   * MSVC2015(or later) toolchain or MinGW 7.3(or later) for Windows OS.
-  * Debug server. It can be an OpenOCD([prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)) or st-link GDB server from [Atollic TrueStudio](https://atollic.com/truestudio/) or [Jlink GDB server](https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/) (if you use jlink instead of st-link)
+  * Debug server. It can be an OpenOCD(**We recommend this [prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)**) or st-link GDB server from [Atollic TrueStudio](https://atollic.com/truestudio/) or [Jlink GDB server](https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/) (if you use jlink instead of st-link)
 
 ### Prepare
 Download the example. Download the necessary version of REMCU Lib from [**download page**](https://remotemcu.com/download):  
