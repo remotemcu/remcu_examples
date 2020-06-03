@@ -40,6 +40,13 @@ Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard a
 ```bash
 ssh pi@remcu.local
 ```
+<details>
+  <summary>putty
+<b>(click here to see) </b></summary>
+
+![scheme](../img/putty_remcu.local.png)
+</details>
+
 If you plug Raspberry Pi into laptop/PC directly without a DHCP service, the Rpi will has a ***static IP address 192.168.0.10*** (255.255.255.0 mask and 192.168.0.1 gateway).  
 The default login is ‘pi’ and the default password is ‘raspberry’. Home directory has everything necessary to build and run the examples.  
 This image has a community version of the REMCU lib which works through debug interface and requires an OpenOCD utility. Connect this Raspberry GPIO pins to debug port of the MCU using scheme below.  
