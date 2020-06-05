@@ -17,6 +17,7 @@ There is also possible to use the REMCU with high level languages like Python, J
   * An oscilloscope to watch DAC signal. It is optional.
   * [Anaconda Distribution](https://www.anaconda.com/distribution/), ***we recommend Python 2 version***
   * A debug server. It can be an OpenOCD(**We recommend this [prebuild package](https://github.com/ilg-archived/openocd/releases/tag/v0.10.0-12-20190422)**)
+>Other OpenOCD versions can have an incompatibility with this REMCU Library version. For instance, [v0.10.0-13](https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13) version has another TCL server API and you can not use remcu_connect2OpenOCD function in REMCU Library for connecting to OpenOCD TCL server(default 6666 port). Only remcu_connect2GDB function for connecting OpenOCD GDB server (default 3333 port).
 
 ## Prepare
 
