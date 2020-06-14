@@ -17,7 +17,7 @@ Examples illustrating application development on the [**REMCU Lib**](https://rem
 | EFM32TG(Silabs) 	| soon 	|  	| soon: LCD printer 	|  	|  	|
 | SAMD20(Microchip) 	| soon 	|  	|  	|  	|  	|
 
-### Demo video
+### Demo GIFs
 
 <details>
 	<summary> <b>(click here to view) </b></summary>
