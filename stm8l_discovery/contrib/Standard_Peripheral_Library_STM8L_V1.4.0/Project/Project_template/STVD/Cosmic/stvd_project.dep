@@ -1,0 +1,8 @@
+;	STMicroelectronics dependencies file
+
+[Version]
+Keyword=ST7Project
+Number=1.3
+
+[Root.User.User\src...\..\src\main.c.Config.0]
+ExternDep= ..\..\src\main.c  "C:\Program Files\COSMIC\CXSTM8_16K\Hstm8\mods0.h"  ..\..\..\..\libraries\stm8l15x_stdperiph_driver\inc\stm8l15x.h  ..\..\inc\stm8l15x_conf.h

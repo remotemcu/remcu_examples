@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>project/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>278</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Workspace>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>687</ColumnWidth1><ColumnWidth2>183</ColumnWidth2><ColumnWidth3>45</ColumnWidth3></Build><TerminalIO/></Static>
+    <Windows>
+      
+    <Wnd2><Tabs><Tab><Identity>TabID-25099-10414</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-11658-11262</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>project</ExpandedNode><ExpandedNode>project/STM8L15x_StdPeriph_Driver</ExpandedNode><ExpandedNode>project/STM8L15x_StdPeriph_Driver/inc</ExpandedNode><ExpandedNode>project/STM8L15x_StdPeriph_Driver/src</ExpandedNode><ExpandedNode>project/User</ExpandedNode><ExpandedNode>project/User/inc</ExpandedNode><ExpandedNode>project/User/src</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x.h</Filename><XPos>6</XPos><YPos>38</YPos><SelStart>1887</SelStart><SelEnd>1887</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\main.c</Filename><XPos>0</XPos><YPos>65</YPos><SelStart>2398</SelStart><SelEnd>2398</SelEnd></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00c6ab88><key>iaridepm.enu1</key></Toolbar-00c6ab88></Sizes></Row0></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>430</Bottom><Right>352</Right><x>-2</x><y>-2</y><xscreen>236</xscreen><yscreen>200</yscreen><sizeHorzCX>247379</sizeHorzCX><sizeHorzCY>335008</sizeHorzCY><sizeVertCX>371069</sizeVertCX><sizeVertCY>723618</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>123</Bottom><Right>956</Right><x>-2</x><y>-2</y><xscreen>958</xscreen><yscreen>125</yscreen><sizeHorzCX>1004193</sizeHorzCX><sizeHorzCY>209380</sizeHorzCY><sizeVertCX>247379</sizeVertCX><sizeVertCY>335008</sizeVertCY></Rect></Wnd2></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

@@ -1,0 +1,65 @@
+/////////////////////////////////////////////////////////////////
+//      Example ILINK command file for
+//      STM8 IAR C/C++ Compiler and Assembler.
+//
+//      Copyright 2010 IAR Systems AB.
+//
+//      $Revision: 1648 $
+//
+/////////////////////////////////////////////////////////////////
+
+define memory with size = 16M;
+
+define region TinyData = [from 0x00 to 0xFF];
+
+define region NearFuncCode = [from 0x8000 to 0xFFFF];
+
+define region FarFuncCode = [from 0x8000 to 0xFFFF];
+
+define region HugeFuncCode = [from 0x8000 to 0xFFFF];
+
+define region NearData = [from 0x0000 to 0x07FF];
+
+define region Eeprom = [from 0x1000 to 0x13FF];
+
+define region BootROM = [from 0x6000 to 0x67FF];
+
+
+/////////////////////////////////////////////////////////////////
+
+define block CSTACK with size = _CSTACK_SIZE  {};
+
+define block HEAP  with size = _HEAP_SIZE {};
+
+define block INTVEC with size = 0x80 { ro section .intvec };
+
+initialize by copy { rw,
+	      	     ro section .tiny.rodata,
+                     section MY_RAM_FUNC};
+
+do not initialize { section .vregs };
+do not initialize { section .*.noinit };
+
+// Placement
+place at start of TinyData      { rw section .vregs };
+place in TinyData               { rw section .tiny.* };
+
+place at end of NearData        { block CSTACK };
+place in NearData               { block HEAP,
+                                  rw };     // includes rw section .near.*
+
+place at start of NearFuncCode  { block INTVEC };
+place in NearFuncCode           { ro section .tiny.data_init,
+                                  ro section .far.data_init,
+                                  ro section .huge.data_init,
+                                  ro };     // includes ro section .near_func.*
+
+place in FarFuncCode            { ro section .far.*,
+                                  ro section .far_func.* };
+
+place in HugeFuncCode           { ro section .huge.*,
+                                  ro section .huge_func.* };
+
+place in Eeprom                 { section .eeprom.* };
+
+/////////////////////////////////////////////////////////////////

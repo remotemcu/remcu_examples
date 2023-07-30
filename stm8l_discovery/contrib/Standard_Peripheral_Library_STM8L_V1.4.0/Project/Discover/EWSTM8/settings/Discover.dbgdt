@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1381</ColumnWidth1></Debug-Log>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1035</ColumnWidth1><ColumnWidth2>276</ColumnWidth2><ColumnWidth3>69</ColumnWidth3></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>227</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        
+        
+        
+      <MixedMode>1</MixedMode><CodeCovShow>0</CodeCovShow><InstrProfShow>0</InstrProfShow></Disassembly>
+    </Static>
+    <Windows>
+      
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-19230-14742</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-29456-14755</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-29979-14746</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>Discover</ExpandedNode><ExpandedNode>Discover/Output</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-7959-14749</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\delay.c</Filename><XPos>0</XPos><YPos>77</YPos><SelStart>965</SelStart><SelEnd>965</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x.h</Filename><XPos>0</XPos><YPos>108</YPos><SelStart>4862</SelStart><SelEnd>4862</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\src\stm8l15x_flash.c</Filename><XPos>0</XPos><YPos>36</YPos><SelStart>2041</SelStart><SelEnd>2041</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_flash.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>842</SelStart><SelEnd>842</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\eeprom.c</Filename><XPos>0</XPos><YPos>21</YPos><SelStart>1063</SelStart><SelEnd>1063</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\discover_functions.c</Filename><XPos>0</XPos><YPos>681</YPos><SelStart>15100</SelStart><SelEnd>15100</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Debug\List\Discover.map</Filename><XPos>0</XPos><YPos>597</YPos><SelStart>17387</SelStart><SelEnd>17387</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\icc_measure.c</Filename><XPos>0</XPos><YPos>270</YPos><SelStart>7736</SelStart><SelEnd>7736</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\stm8l_discovery_lcd.c</Filename><XPos>0</XPos><YPos>143</YPos><SelStart>4005</SelStart><SelEnd>4005</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\stm8l15x_it.c</Filename><XPos>0</XPos><YPos>312</YPos><SelStart>7019</SelStart><SelEnd>7019</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\src\stm8l15x_exti.c</Filename><XPos>0</XPos><YPos>331</YPos><SelStart>11705</SelStart><SelEnd>11705</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\main.c</Filename><XPos>0</XPos><YPos>39</YPos><SelStart>1730</SelStart><SelEnd>1730</SelEnd></Tab><ActiveTab>11</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\inc\discover_board.h</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>1241</SelStart><SelEnd>1241</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00b5aba0><key>iaridepm.enu1</key></Toolbar-00b5aba0></Sizes></Row0><Row1><Sizes><Toolbar-0313da18><key>debuggergui.enu1</key></Toolbar-0313da18></Sizes></Row1></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>380</Bottom><Right>301</Right><x>-2</x><y>-2</y><xscreen>133</xscreen><yscreen>151</yscreen><sizeHorzCX>139413</sizeHorzCX><sizeHorzCY>252931</sizeHorzCY><sizeVertCX>317610</sizeVertCX><sizeVertCY>639866</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>380</Bottom><Right>131</Right><x>-2</x><y>-2</y><xscreen>133</xscreen><yscreen>151</yscreen><sizeHorzCX>139413</sizeHorzCX><sizeHorzCY>252931</sizeHorzCY><sizeVertCX>139413</sizeVertCX><sizeVertCY>639866</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>149</Bottom><Right>956</Right><x>-2</x><y>-2</y><xscreen>958</xscreen><yscreen>151</yscreen><sizeHorzCX>1004193</sizeHorzCX><sizeHorzCY>252931</sizeHorzCY><sizeVertCX>139413</sizeVertCX><sizeVertCY>252931</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+
