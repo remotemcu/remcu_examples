@@ -32,15 +32,9 @@ To run the example next software is required:
 >Other OpenOCD versions can have an incompatibility with this REMCU Library version. For instance, [v0.10.0-13](https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13) version has another TCL server API and you can not use remcu_connect2OpenOCD function in REMCU Library for connecting to OpenOCD TCL server(default 6666 port). Only remcu_connect2GDB function for connecting OpenOCD GDB server (default 3333 port). or st-link GDB server from [Atollic TrueStudio](https://atollic.com/truestudio/) or [Jlink GDB server](https://www.segger.com/products/debug-probes/j-link/tools/j-link-gdb-server/about-j-link-gdb-server/) (if you use jlink instead of st-link)
 
 ### Prepare
-Download the example. Download the necessary version of REMCU Lib from [**download page**](https://remotemcu.com/download):  
-Target - **STM32F3Discovery**  
-Library - **StdPeriph_Lib**  
-Version - **1.1.0**  
-Operation system - **your OS**
-<details>
-  <summary>download show<b>(click here) </b></summary>
-  
-![download show](../img/download.png)
+Download the example. Download the necessary version of REMCU Lib from [**repo**](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F3/STM32F30X-StdPeriph_Lib-V1.1.0-01) or build the library yourself using [the sdk collection repo ](https://github.com/remotemcu/remcu-chip-sdks) 
+
+Copy the lib files and *remcu_include* folder to this folder.
 </details>
 fExtract the library to examples the folder (accel_graph folder). Open the **accell_graph** project with help Qt Creator and build it. Run compiled app.
 <details>

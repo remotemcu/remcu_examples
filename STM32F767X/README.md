@@ -25,17 +25,10 @@ There is also possible to use the REMCU with high level languages like Python, J
 
 Install the [Anaconda Distribution](https://www.anaconda.com/distribution/) 
 
-Download the example. Download the necessary version of REMCU Lib from [**download page**](https://remotemcu.com/download):  
-Target - **STM32F767xx**  
-Library - **LowLayer_HAL_drivers**  
-Version - **1.16.0**  
-Operation system - **your OS**
-<details>
-  <summary>download show<b>(click here) </b></summary>
-  
-![](img/downloadF7.PNG)
-</details>
-Extract the library to this folder. 
+Download the example. Download the necessary version of REMCU Lib from [**repo**](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F7/STM32F767xx-LowLayer_HAL_drivers-V1.16.0-01) or build the library yourself using [the sdk collection repo ](https://github.com/remotemcu/remcu-chip-sdks) 
+
+Copy the lib files and *remcu_include* folder to this folder.
+
 <details>
   <summary>show <b>(click here)</b></summary>
   
