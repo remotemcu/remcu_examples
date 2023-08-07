@@ -122,25 +122,14 @@ https://iosoft.blog/2019/01/28/raspberry-pi-openocd/
  cd STM32F030-51/
 ```
 
-3. Download REMCU Lib archive from [**download page**](https://remotemcu.com/download):  
-Target - **STM32F030XX** or **STM32F051**
-Library - **StdPeriph_Lib**  
-Version - **V1.5.0**  
-Operation system - **Raspbian**
+3. Download the necessary version of REMCU Lib from [**repo**](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/): [STM32F030](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/STM32F030-StdPeriph_Lib-V1.5.0-01)/[STM32F051](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/STM32F051-StdPeriph_Lib-V1.5.0-01) or build the library yourself using [the sdk collection repo ](https://github.com/remotemcu/remcu-chip-sdks)  
 
-<details>
-  <summary>download page
-  <b>(click here) </b></summary>
-  
-![download lib](img/download_unix.png)
-</details>
 
-4. Extract it to the example folder  
+4. Copy the lib files and *remcu_include* folder to the example folder  
 
 ```bash
 $pwd 
 .../STM32F030-51/
-$tar -xf remcu-*.tar
 ```
 
 
@@ -186,20 +175,9 @@ The REMCU library can be ported to any version of the Raspberry Pi board and als
  * [Anaconda Distribution](https://www.anaconda.com/distribution/), ***we recommend Python 2 version***
 
 ### Prepare
-Download the example. Download the necessary version of REMCU Lib from [**download page**](https://remotemcu.com/download):  
-Target - **STM32F030XX** or **STM32F051**
-Library - **StdPeriph_Lib**  
-Version - **V1.5.0**  
-Operation system - **MacOS/Linux**
+Download the example. Download the necessary version of REMCU Lib from [**repo**](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/): [STM32F030](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/STM32F030-StdPeriph_Lib-V1.5.0-01)/[STM32F051](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/STM32F051-StdPeriph_Lib-V1.5.0-01) or build the library yourself using [the sdk collection repo ](https://github.com/remotemcu/remcu-chip-sdks) 
 
-<details>
-  <summary>download page
-	<b>(click here) </b></summary>
-	
-![download lib](img/download_unix.png)
-</details>
-
-Extract the library to this folder.  
+Copy the lib files and *remcu_include* folder to this folder. 
 
 Connect the STM32F0 board with debugger to PC:  
 ![connection](img/connection.png)
@@ -263,19 +241,9 @@ But there is possible to use the REMCU with high level languages like Python, Ja
  * [Anaconda Distribution](https://www.anaconda.com/distribution/), ***we recommend Python 2 version***
 
 ### Prepare
-Download the example. Download the necessary version of REMCU Lib from [**download page**](https://remotemcu.com/download):  
-Target - **STM32F030XX** or **STM32F051**
-Library - **StdPeriph_Lib**  
-Version - **V1.5.0**  
-Operation system - **Windows**
-<details>
-  <summary>download page
-	<b>(click here) </b></summary>
-	
-![download lib](img/download_unix.png)
-</details>
+Download the example. Download the necessary version of REMCU Lib from [**repo**](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/): [STM32F030](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/STM32F030-StdPeriph_Lib-V1.5.0-01)/[STM32F051](https://github.com/remotemcu/prebuilt_libraries/tree/master/STM32/STM32F0/STM32F051-StdPeriph_Lib-V1.5.0-01) or build the library yourself using [the sdk collection repo ](https://github.com/remotemcu/remcu-chip-sdks)  
 
-Extract the library to this folder.  
+Copy the lib files and *remcu_include* folder to this folder.  
 
 Connect the STM32 board with debugger to PC:  
 <details>

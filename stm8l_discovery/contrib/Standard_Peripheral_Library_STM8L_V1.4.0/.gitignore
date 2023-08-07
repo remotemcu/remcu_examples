@@ -1,0 +1,15 @@
+*.d
+*.o
+*.ld
+*.s
+*.elf
+*.user
+*.config
+*.creator.user
+*.creator.user*
+*.creator
+*.files
+*.includes
+*.ll
+build/
+*.lib/
