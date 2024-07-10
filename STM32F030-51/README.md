@@ -5,7 +5,7 @@
 ## Overview
 
 These simple examples demonstrate how to easily expand hardware of a Raspberry Pi board using 50 cent STM32F030 microcontroller(and other low-cost STM32F0 MCUs) and some wires.  
-The Python scripts ran Raspberry will gain access to internal STM32F0 peripheral modules like DAC, ADC, DMA, GPIO and others as if these peripherals were a part of Raspberry chip. Without a microcontroller firmware development and a kernel driver just with help [**REMCU Library**](https://remotemcu.com/).
+The Python scripts ran Raspberry will gain access to internal STM32F0 peripheral modules like DAC, ADC, DMA, GPIO and others as if these peripherals were a part of Raspberry chip. Without a microcontroller firmware development and a kernel driver just with help [**REMCU Library**](https://remotemcu.github.io/).
 
 There are also [Jupyter Notebook](https://jupyter.org/) scripts for running on PC(MacOS, Linux, Windows)
 
@@ -29,11 +29,11 @@ A video tutorial on how to build and run the [similar examples](../STM32F103RCT6
  * A Raspberry Pi 1/2/3/4 board
  * A board with the STM32F030 or stm32F051 device. There are demonstration on [STM32F030 DEMO BOARD V1.1](https://stm32-base.org/boards/STM32F030F4P6-STM32F030-DEMO-BOARD-V1.1.html) and [LC Technology STM32F051C8T6](https://stm32-base.org/boards/STM32F051C8T6-LC-Technology)
  * 4 wires to connect Pi with MCU
- * A specify [***image***](https://remotemcu.com//images/2020-06-03-raspberry-remcu.zip) of Raspberry containing these examples, prebuild OpenOCD utility and REMCU library  
+ * A specify [***image***](https://drive.google.com/file/d/1aOPMPzmTuXZM4rr5IjR2t7RhmQ8zTf2V/view) of Raspberry containing these examples, prebuild OpenOCD utility and REMCU library  
   or install/download these components to your Raspbian filesystem manually. [Instructions](#manual-configuration-installation-all-necessary-components)
 
 ### Prepare
-Download the [***image***](https://remotemcu.com//images/2020-06-03-raspberry-remcu.zip) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
+Download the [***image***](https://drive.google.com/file/d/1aOPMPzmTuXZM4rr5IjR2t7RhmQ8zTf2V/view) and unpack the archive. Write the image to your SD card using the official Raspberry Pi [documentation](https://www.raspberrypi.org/documentation/installation/).  
 [![flash image](https://img.youtube.com/vi/CCRVo5sI1E0/0.jpg)](https://www.youtube.com/watch?v=CCRVo5sI1E0)  
 Insert the card into the board and switch Raspberry Pi on.  Connect a keyboard and a monitor or connect using SSH. By default, the system has a zeroconf mDNS server(Avahi), you can connect Raspbery Pi using ***remcu.local*** name
 ```bash

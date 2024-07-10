@@ -1,7 +1,7 @@
 # Jupyter Notebook Examples
 
 ## Overview
-If you ever wish to conduct a quick experiment with any chip peripheral module or explore it, then [**REMCU Lib**](https://remotemcu.com/) is the right tool for that. It can be easily integrated in [Jupyter Notebook](https://jupyter.org/) with an Interactive C++ interpreter . This IDE is free and it lets you run and execute C or C++ code on the go. This way you can call the functions of a driver directly and control MCU or SoC in real time.  
+If you ever wish to conduct a quick experiment with any chip peripheral module or explore it, then [**REMCU Lib**](https://remotemcu.github.io/) is the right tool for that. It can be easily integrated in [Jupyter Notebook](https://jupyter.org/) with an Interactive C++ interpreter . This IDE is free and it lets you run and execute C or C++ code on the go. This way you can call the functions of a driver directly and control MCU or SoC in real time.  
 It saves a lot of time that is usually spent on the development of experimental MCU firmware. An interact work with MCU/SoC peripherals helps us to explore new peripheral blocks of MCU/SoC quicker.  
 And furthermore, the application code written in the C programming language using REMCU is backwards-portable, meaning it can be transferred from a desktop program to the MCU program and vice-versa. The code will work just as fine on MCU as it works on PC. That's why code written on desktop with ReMCU can be used to develop stand-alone firmware for MCU.  
 There is also possible to use the REMCU with high level languages like Python, Java, C# and others.  To make working with them less troublesome, we provide language wrappers. With these wrappers it becomes easy to work with hardware as it is using C or C++.
@@ -48,7 +48,7 @@ C++ [Cling](https://github.com/root-project/cling) interpreter is only available
 Run Jupyter Notebook and open the stm32f4_discovery.ipynb file in it. The script contains detailed comments for work. You just do step by step code of the script and observe the results.  
 
 
-Description of REMCU functions can be found can be found in [API reference](https://remotemcu.com/api-v1-0)  
+Description of REMCU functions can be found can be found in [API reference](https://remotemcu.github.io/api-v1-0)  
 Code controlling MCU peripherals have been taken from examples of [Standard Peripheral Library for STM32F4DISCOVERY](https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32-standard-peripheral-library-expansion/stsw-stm32068.html#overview). You can see description of their at [AN3983](https://www.st.com/content/ccc/resource/technical/document/application_note/f1/6d/73/bb/50/a5/47/17/DM00038796.pdf/files/DM00038796.pdf/jcr:content/translations/en.DM00038796.pdf) doc.
 
 
@@ -70,7 +70,7 @@ For the operation convenience, we prepared a particular Python wrapper(STM32F4XX
 ![diff](../../img/diff.png)
 </details>
 
-Description of REMCU functions can be found can be found in [API reference](https://remotemcu.com/api-v1-0)  
+Description of REMCU functions can be found can be found in [API reference](https://remotemcu.github.io/api-v1-0)  
 Code controlling MCU peripherals have been taken from examples of [Standard Peripheral Library for STM32F4DISCOVERY](https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32-standard-peripheral-library-expansion/stsw-stm32068.html#overview). You can see description of their examples at [AN3983](https://www.st.com/content/ccc/resource/technical/document/application_note/f1/6d/73/bb/50/a5/47/17/DM00038796.pdf/files/DM00038796.pdf/jcr:content/translations/en.DM00038796.pdf) doc.
 
 

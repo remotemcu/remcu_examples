@@ -4,7 +4,7 @@
 
 ## Overview
 The **gyrol_graph** app grabs gyroscope data from on-board([STM32F3Discovery](https://www.st.com/resource/en/user_manual/dm00063382-discovery-kit-with-stm32f303vc-mcu-stmicroelectronics.pdf)) MEMS *L3GD20* 3-axis digital output sensor and plot graph of it vs. time in real time.
-We didn’t load any specific firmware into the microcontroller. Our program just works directly with the SPI peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.com/). In this way, our application can interact with the accelerometer integrated into the discovery board.
+We didn’t load any specific firmware into the microcontroller. Our program just works directly with the SPI peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.github.io/). In this way, our application can interact with the accelerometer integrated into the discovery board.
 
 ![compass](img/gyro_demo.gif)
 

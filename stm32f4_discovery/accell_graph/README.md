@@ -2,7 +2,7 @@
 
 ## Overview
 A GUI app which grabs acceleration data from on-board([STM32F4Discovery](https://www.st.com/en/evaluation-tools/stm32f4discovery.html#tools-software)) MEMS sensor and plot graph of it vs. time in real time.
-We didn’t load any specific firmware into the microcontroller. Our program just works directly with the I2C peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.com/). In this way, our application can interact with the accelerometer integrated into the discovery board.
+We didn’t load any specific firmware into the microcontroller. Our program just works directly with the I2C peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.github.io/). In this way, our application can interact with the accelerometer integrated into the discovery board.
 
 ![i2c](img/mems_demo.gif)
 

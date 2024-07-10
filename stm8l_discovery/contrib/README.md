@@ -1,6 +1,6 @@
 # MCU_Experiments
 
-Amazing experiments with microcontroller STM8L151 using an [STM8L-Discovery development board](https://www.st.com/en/evaluation-tools/stm8l-discovery.html), [Jupyter Notebook](https://jupyter.org/), [OpenOCD](http://openocd.org/) and [**REMCU lib**](https://remotemcu.com)
+Amazing experiments with microcontroller STM8L151 using an [STM8L-Discovery development board](https://www.st.com/en/evaluation-tools/stm8l-discovery.html), [Jupyter Notebook](https://jupyter.org/), [OpenOCD](http://openocd.org/) and [**REMCU lib**](https://remotemcu.github.io)
 
 ### stm8l_discovery_GPIO_Toggle
 It is a sample of working wit GPIO of STM8L-Discovery board.
@@ -19,7 +19,7 @@ It is a sample that demonstrates how to use the Direct Memory Access (DMA) in th
 
 Russian description : https://habr.com/ru/post/486598/
 
-English description : in proccess... Perhaps [**REMCU tutorial**](https://remotemcu.com/tutorials) can help you run these notebooks.
+English description : in proccess... Perhaps [**REMCU tutorial**](https://remotemcu.github.io/tutorials) can help you run these notebooks.
 
 ## Prerequirements
 ### Hardware

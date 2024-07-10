@@ -2,7 +2,7 @@
 
 ## Overview
 This example covers a [CAN Bus](https://en.wikipedia.org/wiki/CAN_bus) peripheral module. It is a GUI app of almost full-featured CAN bus analyzer.
-We didn’t load any specific firmware into the microcontroller. Our program just works directly with the CAN peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.com/). In this way, our application can interact with CAN devices connected to the Discovery board.
+We didn’t load any specific firmware into the microcontroller. Our program just works directly with the CAN peripheral block of the STM32 MCU using a remote procedure execution of the [Standard Peripheral Library](https://www.st.com/en/embedded-software/stm32-standard-peripheral-libraries.html) with help [**REMCU Library**](https://remotemcu.github.io/). In this way, our application can interact with CAN devices connected to the Discovery board.
 
 ![](img/can_bus_demo.gif)
 
