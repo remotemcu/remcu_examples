@@ -1,6 +1,6 @@
 # REMCU examples
 
-Examples illustrating application development on the [**REMCU Lib**](https://remotemcu.com/). These examples are designed to get you up and running with REMCU Lib in no time.
+Examples illustrating application development on the [**REMCU Lib**](https://remotemcu.github.io/). These examples are designed to get you up and running with REMCU Lib in no time.
 
 | Target 	| Jupyter notebook ex. 	| Python scripts ex. 	| Qt app ex. 	| C/C++ app ex. 	| Raspberry Pi board examples 	|
 |:-----------------:	|:--------------------------------------------------:	|:------------------:	|:-------------------------------:	|:--------------------:	|:------------------------------------------------------------------------------------------------:	|
@@ -40,16 +40,16 @@ STM32F103C8T6-Blue-Pill/Raspberry + Blue Pill CAN bus demo:
 </details>
 
 ## REMCU Lib
-The [**REMCU Lib**](https://remotemcu.com/) is a cross-platform library designed for remote access to internal peripherals of various MCU and SoC as if these peripherals were a part of your computer.
+The [**REMCU Lib**](https://remotemcu.github.io/) is a cross-platform library designed for remote access to internal peripherals of various MCU and SoC as if these peripherals were a part of your computer.
 The library gives access a user space program to all peripherals of the remote chip  through the same API as peripheral drivers from Software Development Kit (SDK) provided by semiconductor chip vendors or third parties for MCU firmware development.
 Thereby a developer doesn’t need to learn new tools but can just reuse his firmware code and examples of the SDK in his code designed for personal or embedded computers.
-Firmware and protocol communication development are not required, because the [**REMCU Lib**](https://remotemcu.com/) translates itself the local API function call on computer to the call of the same function of peripheral driver on the remote chip.
+Firmware and protocol communication development are not required, because the [**REMCU Lib**](https://remotemcu.github.io/) translates itself the local API function call on computer to the call of the same function of peripheral driver on the remote chip.
 
 Let's have a look at the video below and see what opportunities and applications it provides.
 
 [![REMCU DESCRIPTION](img/preview_description.png)](https://youtu.be/PJPl9Y96hA0)
 
-REMCU Lib Docs: https://remotemcu.com/docs
+REMCU Lib Docs: https://remotemcu.github.io/docs
 
 Full details of the examples can be found in README.md file of the corresponding folders.
 
@@ -61,8 +61,8 @@ If you have a feature idea - please open a [feature request](https://github.com/
 If you have new sample development on the REMCU Lib  - please opening a [pull request](https://github.com/remotemcu/remcu_examples/pulls) or [*"Suggestion of examples"*](https://github.com/remotemcu/remcu_examples/issues/new?assignees=&labels=Suggestion+of+examples&template=suggestion-of-examples.md&title=) request.  
 We will be pleased to answer all your questions about the REMCU Lib project through the options/channels below:  
 *StackOverflow*. Tag your question with **#remculib** tag. We watch full list of questions and will answer ASAP. Make experience that you've got available for other users!  
-[Contact us form](https://remotemcu.com/contact-us)  
-[@Email](support@remotemcu.com)  
+[Contact us form](https://remotemcu.github.io/contact-us)  
+[@Email](en.chormonov@gmail.com)  
 [Twitter](https://twitter.com/RemoteMcu)  
 
 Thanks in advance!
